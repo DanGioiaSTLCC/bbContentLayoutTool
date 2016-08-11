@@ -7,6 +7,4 @@ This hack allows Blackboard content editors (Academics/etc.) with little or no H
 
 <h3>Installing the Hack</h3>
 
-The Content Layout Tool requires the Blackboard 'Javascript Hack' module.
-
-<iframe width="320" height="240" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://mediasite.usc.edu.au/Mediasite/Play/b6bb9131d2494e85bbaaafd13c2f76991d"></iframe>
+The Content Layout Tool requires the Blackboard 'Javascript Hack' module. You can check out how the Content Layout Tool works here: https://mediasite.usc.edu.au/Mediasite/Play/b6bb9131d2494e85bbaaafd13c2f76991d
