@@ -1,0 +1,613 @@
+@charset "UTF-8";
+/* line 2, ../../sass/neat/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 1, ../../sass/cltool/_mixins.scss */
+a.btn, a.launch-btn, section.uscWizContainer div.uscWizWrapper ul.uscWizardControls li a {
+  display: inline-block;
+  padding: 0.8em 1.5em;
+  border-radius: 0.3em;
+  background-color: #4290CC;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1em;
+  cursor: pointer; }
+  /* line 10, ../../sass/cltool/_mixins.scss */
+  a.btn i, a.launch-btn i, section.uscWizContainer div.uscWizWrapper ul.uscWizardControls li a i {
+    padding-left: 0.25em; }
+
+/* line 1, ../../sass/cltool/_interface.scss */
+body {
+  font-size: 13; }
+
+/* line 5, ../../sass/cltool/_interface.scss */
+.hidden {
+  display: none !important; }
+
+/* line 55, ../../sass/cltool/_interface.scss */
+li {
+  -webkit-transition: background-color 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition: background-color 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: background-color 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+
+/* line 66, ../../sass/cltool/_interface.scss */
+a.launch-btn {
+  display: none; }
+  /* line 59, ../../sass/cltool/_interface.scss */
+  a.launch-btn:before {
+    content: "";
+    font-family: "FontAwesome";
+    padding: 0 0.5em 0 0; }
+
+/* line 73, ../../sass/cltool/_interface.scss */
+div#step1 {
+  position: relative; }
+  /* line 75, ../../sass/cltool/_interface.scss */
+  div#step1 a.launch-btn {
+    display: inline-block;
+    position: absolute;
+    bottom: 0.4rem;
+    left: 2.8rem; }
+
+/* line 83, ../../sass/cltool/_interface.scss */
+body.noscroll {
+  overflow: hidden; }
+
+/*Animate variant transitions */
+/* Can't be done as there is no add/remove class - js just does string replace for variant (incl. classes) */
+/* line 92, ../../sass/cltool/_interface.scss */
+div.uscWizAddItemPlaceholder {
+  position: absolute;
+  left: 0;
+  bottom: -1em;
+  width: 100%;
+  height: 3em;
+  padding: 0;
+  z-index: 500;
+  background-color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0);
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  cursor: pointer;
+  opacity: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: background-color 0.15s cubic-bezier(0.55, 0.085, 0.68, 0.53), border-color 0.25s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  -moz-transition: background-color 0.15s cubic-bezier(0.55, 0.085, 0.68, 0.53), border-color 0.25s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  transition: background-color 0.15s cubic-bezier(0.55, 0.085, 0.68, 0.53), border-color 0.25s cubic-bezier(0.55, 0.085, 0.68, 0.53); }
+  /* line 111, ../../sass/cltool/_interface.scss */
+  div.uscWizAddItemPlaceholder > i {
+    position: absolute;
+    left: 50%;
+    top: -20%;
+    opacity: 0;
+    display: block;
+    width: 1em;
+    height: 1em;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+    color: #3a3a3a;
+    -webkit-transition: top 0.25s, opacity 0.25s;
+    -moz-transition: top 0.25s, opacity 0.25s;
+    transition: top 0.25s, opacity 0.25s; }
+  /* line 125, ../../sass/cltool/_interface.scss */
+  div.uscWizAddItemPlaceholder:before, div.uscWizAddItemPlaceholder:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 0;
+    left: 50%;
+    height: 1px;
+    background-color: #80b4e9;
+    -webkit-transition: width 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53), left 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    -moz-transition: width 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53), left 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    transition: width 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53), left 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53); }
+  /* line 136, ../../sass/cltool/_interface.scss */
+  div.uscWizAddItemPlaceholder:after {
+    top: auto;
+    bottom: 0; }
+  /* line 141, ../../sass/cltool/_interface.scss */
+  div.uscWizAddItemPlaceholder.activate {
+    background-color: #d7e7f8;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff; }
+    /* line 146, ../../sass/cltool/_interface.scss */
+    div.uscWizAddItemPlaceholder.activate:before, div.uscWizAddItemPlaceholder.activate:after {
+      left: 0;
+      width: 100%; }
+    /* line 150, ../../sass/cltool/_interface.scss */
+    div.uscWizAddItemPlaceholder.activate > i {
+      color: #2374c6; }
+  /* line 154, ../../sass/cltool/_interface.scss */
+  div.uscWizAddItemPlaceholder:hover {
+    opacity: 1;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec; }
+    /* line 159, ../../sass/cltool/_interface.scss */
+    div.uscWizAddItemPlaceholder:hover > i {
+      opacity: 1;
+      top: 50%; }
+  /* line 164, ../../sass/cltool/_interface.scss */
+  div.uscWizAddItemPlaceholder.drop {
+    background: #abcef0 url("../../branding/themes/usc/custom/images/bbwizard/bb_line_diagonal1.png"); }
+
+/* line 172, ../../sass/cltool/_interface.scss */
+ul.uscWizItemToolbar {
+  position: absolute;
+  left: 50%;
+  bottom: 2em;
+  width: 40em;
+  margin-left: -20em;
+  box-shadow: 0.3333em 0.3333em 2em -0.6666em rgba(26, 27, 28, 0.75);
+  display: none;
+  opacity: 0;
+  z-index: 2020;
+  -webkit-transition: opacity 0.25s ease-out, bottom 0.25s ease-out;
+  -moz-transition: opacity 0.25s ease-out, bottom 0.25s ease-out;
+  transition: opacity 0.25s ease-out, bottom 0.25s ease-out; }
+  /* line 10, ../../sass/cltool/_interface.scss */
+  ul.uscWizItemToolbar:after, ul.uscWizItemToolbar:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    z-index: 400; }
+  /* line 22, ../../sass/cltool/_interface.scss */
+  ul.uscWizItemToolbar:after {
+    border-color: rgba(36, 36, 37, 0);
+    border-top-color: #242425;
+    border-width: 0.75em;
+    margin-left: -0.75em; }
+  /* line 28, ../../sass/cltool/_interface.scss */
+  ul.uscWizItemToolbar:before {
+    border-color: rgba(36, 36, 37, 0);
+    border-top-color: #242425;
+    border-width: 1em;
+    margin-left: -1em; }
+  /* line 189, ../../sass/cltool/_interface.scss */
+  ul.uscWizItemToolbar li {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    float: left;
+    padding: 0.75em 0;
+    text-align: center;
+    background-color: #242425;
+    border-bottom: 1px solid #4b494c;
+    color: #ececec;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transition: background-color 0.25s ease-out;
+    -moz-transition: background-color 0.25s ease-out;
+    transition: background-color 0.25s ease-out; }
+    /* line 206, ../../sass/cltool/_interface.scss */
+    ul.uscWizItemToolbar li i {
+      display: none;
+      margin-top: 0.4rem; }
+    /* line 211, ../../sass/cltool/_interface.scss */
+    ul.uscWizItemToolbar li span {
+      -webkit-transition: opacity 0.25s ease-out;
+      -moz-transition: opacity 0.25s ease-out;
+      transition: opacity 0.25s ease-out; }
+    /* line 215, ../../sass/cltool/_interface.scss */
+    ul.uscWizItemToolbar li > ul.uscWizItems {
+      opacity: 0;
+      margin: 0;
+      padding: 0;
+      background-color: #313032;
+      box-shadow: inset 0.3333em 0.3333em 1em -0.6666em rgba(26, 27, 28, 0.75);
+      -webkit-transition: opacity 0.25s ease-out, margin 0.25s ease-out;
+      -moz-transition: opacity 0.25s ease-out, margin 0.25s ease-out;
+      transition: opacity 0.25s ease-out, margin 0.25s ease-out; }
+      /* line 223, ../../sass/cltool/_interface.scss */
+      ul.uscWizItemToolbar li > ul.uscWizItems li {
+        height: 0;
+        padding: 0 1.5em;
+        width: auto;
+        float: left;
+        background: none;
+        color: #ececec;
+        border-bottom: none;
+        -webkit-transition: color 0.25s ease-out;
+        -moz-transition: color 0.25s ease-out;
+        transition: color 0.25s ease-out; }
+        /* line 37, ../../sass/cltool/_interface.scss */
+        ul.uscWizItemToolbar li > ul.uscWizItems li:before {
+          content: "";
+          position: absolute;
+          width: 0;
+          left: 50%;
+          height: 2px;
+          background-color: #2374c6;
+          -webkit-transition: width 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94), left 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          -moz-transition: width 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94), left 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          transition: width 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94), left 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+          /* line 40, ../../sass/cltool/_interface.scss */
+          ul.uscWizItemToolbar li > ul.uscWizItems li:before else {
+            bottom: -2px; }
+        /* line 48, ../../sass/cltool/_interface.scss */
+        ul.uscWizItemToolbar li > ul.uscWizItems li.active:before {
+          width: 100%;
+          left: 0; }
+        /* line 233, ../../sass/cltool/_interface.scss */
+        ul.uscWizItemToolbar li > ul.uscWizItems li i {
+          display: none;
+          margin: 2.5rem 0 2.5rem; }
+        /* line 240, ../../sass/cltool/_interface.scss */
+        ul.uscWizItemToolbar li > ul.uscWizItems li.active {
+          color: #3f8edd; }
+        /* line 243, ../../sass/cltool/_interface.scss */
+        ul.uscWizItemToolbar li > ul.uscWizItems li:first-child {
+          padding-left: 3em; }
+    /* line 248, ../../sass/cltool/_interface.scss */
+    ul.uscWizItemToolbar li.inactive {
+      background-color: #c6c6c6 !important;
+      border-bottom: 0.25em solid #c6c6c6 !important;
+      border-left: 1px solid #a0a0a0;
+      color: #868686 !important; }
+    /* line 254, ../../sass/cltool/_interface.scss */
+    ul.uscWizItemToolbar li.active {
+      padding: 0.75em 0 0;
+      background-color: #293644; }
+      /* line 257, ../../sass/cltool/_interface.scss */
+      ul.uscWizItemToolbar li.active > ul.uscWizItems {
+        height: 4em;
+        margin: 0.75em 0 0;
+        opacity: 1; }
+        /* line 263, ../../sass/cltool/_interface.scss */
+        ul.uscWizItemToolbar li.active > ul.uscWizItems li {
+          height: 4em;
+          line-height: 4em; }
+    /* line 274, ../../sass/cltool/_interface.scss */
+    ul.uscWizItemToolbar li:last-child {
+      border-bottom: none; }
+  /* line 278, ../../sass/cltool/_interface.scss */
+  ul.uscWizItemToolbar.activate {
+    z-index: 2010;
+    display: block;
+    bottom: 3em;
+    -webkit-animation: toolbarReveal 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -moz-animation: toolbarReveal 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    animation: toolbarReveal 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 0.15s;
+    -moz-animation-delay: 0.15s;
+    animation-delay: 0.15s; }
+
+@-webkit-keyframes toolbarReveal {
+  from {
+    opacity: 0;
+    bottom: 2em; }
+  to {
+    opacity: 1;
+    bottom: 3em; } }
+@-moz-keyframes toolbarReveal {
+  from {
+    opacity: 0;
+    bottom: 2em; }
+  to {
+    opacity: 1;
+    bottom: 3em; } }
+@keyframes toolbarReveal {
+  from {
+    opacity: 0;
+    bottom: 2em; }
+  to {
+    opacity: 1;
+    bottom: 3em; } }
+@-webkit-keyframes variantReveal {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-moz-keyframes variantReveal {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes variantReveal {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* line 312, ../../sass/cltool/_interface.scss */
+section.uscWizContainer {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 350;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: 'Roboto', Open-sans, sans-serif;
+  font-size: 13;
+  overflow-y: scroll;
+  z-index: 15555; }
+  /* line 329, ../../sass/cltool/_interface.scss */
+  section.uscWizContainer div.uscWizWrapper {
+    position: relative;
+    min-width: 66em;
+    max-width: 78em;
+    min-height: 40em;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #fff;
+    border-top: 4px solid #2374c6;
+    z-index: 360; }
+    /* line 346, ../../sass/cltool/_interface.scss */
+    section.uscWizContainer div.uscWizWrapper ul.uscWizardControls {
+      position: absolute;
+      display: block;
+      height: 4em;
+      right: 0em;
+      padding: 0.5em;
+      bottom: -4em;
+      background: linear-gradient(#cccccc 0, #fff 20%), center no-repeat scroll; }
+      /* line 355, ../../sass/cltool/_interface.scss */
+      section.uscWizContainer div.uscWizWrapper ul.uscWizardControls li {
+        display: inline-block;
+        margin: 0 0.25em;
+        border-left: 1px solid lightgray; }
+    /* line 366, ../../sass/cltool/_interface.scss */
+    section.uscWizContainer div.uscWizWrapper article.uscWizLayout {
+      display: block;
+      min-width: 62em;
+      max-width: 74em;
+      margin: 0 1em;
+      padding: 0 2em; }
+      /* line 377, ../../sass/cltool/_interface.scss */
+      section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreviewHidden {
+        display: none; }
+      /* line 381, ../../sass/cltool/_interface.scss */
+      section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreview {
+        width: 100%;
+        margin: 2em 0; }
+        /* line 385, ../../sass/cltool/_interface.scss */
+        section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreview div.nodeParent {
+          position: relative;
+          padding: 1em;
+          margin-top: 1em;
+          margin-bottom: 1em;
+          border: 1px solid rgba(255, 255, 255, 0);
+          z-index: 400;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none; }
+          /* line 15, ../../sass/bourbon/addons/_clearfix.scss */
+          section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreview div.nodeParent:after {
+            content: "";
+            display: table;
+            clear: both; }
+@-webkit-keyframes dropReveal {
+  from {
+    background-color: rgba(35, 116, 198, 0.5); }
+  to {
+    background-color: rgba(35, 116, 198, 0); } }
+@-moz-keyframes dropReveal {
+  from {
+    background-color: rgba(35, 116, 198, 0.5); }
+  to {
+    background-color: rgba(35, 116, 198, 0); } }
+@keyframes dropReveal {
+  from {
+    background-color: rgba(35, 116, 198, 0.5); }
+  to {
+    background-color: rgba(35, 116, 198, 0); } }
+          /* line 404, ../../sass/cltool/_interface.scss */
+          section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreview div.nodeParent div.nodeLeft {
+            position: relative;
+            margin-bottom: 2em; }
+            /* line 409, ../../sass/cltool/_interface.scss */
+            section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreview div.nodeParent div.nodeLeft img.mceItemMedia {
+              border: 1px dotted #999; }
+            /* line 412, ../../sass/cltool/_interface.scss */
+            section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreview div.nodeParent div.nodeLeft div.bbplus.bbp-system.bbp-annotation-panel {
+              position: relative; }
+          /* line 420, ../../sass/cltool/_interface.scss */
+          section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreview div.nodeParent ul.uscWizNodeEditTools {
+            position: absolute;
+            top: 50%;
+            right: -2em;
+            margin-top: -4.3em;
+            color: #fff;
+            opacity: 0;
+            border-radius: 0.5em;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            z-index: 2005;
+            -webkit-transition: opacity 0.15s;
+            -moz-transition: opacity 0.15s;
+            transition: opacity 0.15s; }
+            /* line 435, ../../sass/cltool/_interface.scss */
+            section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreview div.nodeParent ul.uscWizNodeEditTools li {
+              display: block;
+              margin: 0.1em 0;
+              width: 2.5em;
+              height: 2.5em;
+              padding: 0.5em 0.75em;
+              border-radius: 1.25em;
+              background-color: #ececec;
+              text-align: center; }
+              /* line 445, ../../sass/cltool/_interface.scss */
+              section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreview div.nodeParent ul.uscWizNodeEditTools li i {
+                width: 1em;
+                text-align: center;
+                color: #3a3a3a; }
+              /* line 451, ../../sass/cltool/_interface.scss */
+              section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreview div.nodeParent ul.uscWizNodeEditTools li:hover {
+                background-color: #2374c6;
+                cursor: pointer; }
+                /* line 454, ../../sass/cltool/_interface.scss */
+                section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreview div.nodeParent ul.uscWizNodeEditTools li:hover i {
+                  color: #fff; }
+          /* line 466, ../../sass/cltool/_interface.scss */
+          section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreview div.nodeParent ul.uscWizNodeVariants {
+            position: absolute;
+            top: 5em;
+            left: 50%;
+            width: 15rem;
+            height: auto;
+            margin-left: -7.5rem;
+            margin-top: 1rem;
+            z-index: 500;
+            display: none; }
+            /* line 478, ../../sass/cltool/_interface.scss */
+            section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreview div.nodeParent ul.uscWizNodeVariants > i {
+              position: absolute;
+              top: 0;
+              left: 50%;
+              margin-left: -1.5rem;
+              margin-top: -2.5rem;
+              text-align: center;
+              width: 3rem;
+              height: 3rem;
+              padding: 0.5rem;
+              border-radius: 1.5em;
+              background-color: #313032;
+              -webkit-transition: padding 0.25s;
+              -moz-transition: padding 0.25s;
+              transition: padding 0.25s;
+              color: #fff;
+              cursor: pointer;
+              opacity: 0;
+              -webkit-transform: scale(0.25);
+              -moz-transform: scale(0.25);
+              -ms-transform: scale(0.25);
+              -o-transform: scale(0.25);
+              transform: scale(0.25);
+              -webkit-transition: -webkit-transform 0.15s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+              -moz-transition: -moz-transform 0.15s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+              transition: transform 0.15s cubic-bezier(0.55, 0.085, 0.68, 0.53); }
+            /* line 497, ../../sass/cltool/_interface.scss */
+            section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreview div.nodeParent ul.uscWizNodeVariants li {
+              display: inline-block;
+              width: 100%;
+              padding: 0.5em 0;
+              float: left;
+              text-align: center;
+              background-color: #575559;
+              border-bottom: 1px solid #3e3c3f;
+              color: rgba(236, 236, 236, 0.8);
+              cursor: pointer;
+              opacity: 0;
+              -webkit-transition: padding 0.15s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+              -moz-transition: padding 0.15s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+              transition: padding 0.15s cubic-bezier(0.55, 0.085, 0.68, 0.53); }
+              /* line 509, ../../sass/cltool/_interface.scss */
+              section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreview div.nodeParent ul.uscWizNodeVariants li.active {
+                background-color: #293644;
+                color: #ececec; }
+              /* line 513, ../../sass/cltool/_interface.scss */
+              section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreview div.nodeParent ul.uscWizNodeVariants li.current {
+                padding: 0.75em 0; }
+            /* line 517, ../../sass/cltool/_interface.scss */
+            section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreview div.nodeParent ul.uscWizNodeVariants.disabled {
+              display: none; }
+            /* line 520, ../../sass/cltool/_interface.scss */
+            section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreview div.nodeParent ul.uscWizNodeVariants.activate {
+              display: block;
+              position: fixed;
+              z-index: 2000; }
+              /* line 524, ../../sass/cltool/_interface.scss */
+              section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreview div.nodeParent ul.uscWizNodeVariants.activate li {
+                box-shadow: 0.3333em 0.3333em 2em -0.6666em rgba(26, 27, 28, 0.75);
+                -webkit-animation: variantReveal 0.1s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+                -moz-animation: variantReveal 0.1s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+                animation: variantReveal 0.1s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+                -webkit-animation-fill-mode: forwards;
+                -moz-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+                -webkit-animation-delay: 0.1s;
+                -moz-animation-delay: 0.1s;
+                animation-delay: 0.1s; }
+              /* line 530, ../../sass/cltool/_interface.scss */
+              section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreview div.nodeParent ul.uscWizNodeVariants.activate > i {
+                opacity: 1;
+                -webkit-transform: scale(1);
+                -moz-transform: scale(1);
+                -ms-transform: scale(1);
+                -o-transform: scale(1);
+                transform: scale(1); }
+          /* line 536, ../../sass/cltool/_interface.scss */
+          section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreview div.nodeParent.unset {
+            border: 1px solid rgba(255, 255, 255, 0);
+            -webkit-transition: opacity 1s cubic-bezier(0.55, 0.085, 0.68, 0.53), border 0.15s, background-color 0.75s, padding 0.15s ease-out;
+            -moz-transition: opacity 1s cubic-bezier(0.55, 0.085, 0.68, 0.53), border 0.15s, background-color 0.75s, padding 0.15s ease-out;
+            transition: opacity 1s cubic-bezier(0.55, 0.085, 0.68, 0.53), border 0.15s, background-color 0.75s, padding 0.15s ease-out;
+            -webkit-animation: dropReveal 1s;
+            -moz-animation: dropReveal 1s;
+            animation: dropReveal 1s;
+            -webkit-animation-fill-mode: forwards;
+            -moz-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+            cursor: pointer; }
+            /* line 546, ../../sass/cltool/_interface.scss */
+            section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreview div.nodeParent.unset:hover {
+              z-index: 2000; }
+              /* line 548, ../../sass/cltool/_interface.scss */
+              section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreview div.nodeParent.unset:hover ul.uscWizNodeEditTools {
+                opacity: 1; }
+          /* line 556, ../../sass/cltool/_interface.scss */
+          section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreview div.nodeParent.bWizMsgPanel {
+            padding: 3em 0 6em;
+            margin-bottom: 4.5em;
+            text-align: center;
+            background: #f9f9f9 url("../../branding/themes/usc/custom/images/bbwizard/bb_line_diagonal1.png");
+            border: 1px solid #2374c6;
+            border-bottom: 4px solid #2374c6;
+            box-shadow: 0.3333em 0.3333em 1em -0.6666em rgba(26, 27, 28, 0.75); }
+            /* line 564, ../../sass/cltool/_interface.scss */
+            section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreview div.nodeParent.bWizMsgPanel h3 {
+              margin-bottom: 0.5em; }
+            /* line 567, ../../sass/cltool/_interface.scss */
+            section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreview div.nodeParent.bWizMsgPanel div.uscWizAddItemPlaceholder {
+              opacity: 1;
+              bottom: -4.5em;
+              border-top: 1px solid #ececec;
+              border-bottom: 1px solid #ececec; }
+              /* line 572, ../../sass/cltool/_interface.scss */
+              section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreview div.nodeParent.bWizMsgPanel div.uscWizAddItemPlaceholder > i {
+                top: 50%;
+                opacity: 1; }
+            /* line 10, ../../sass/cltool/_interface.scss */
+            section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreview div.nodeParent.bWizMsgPanel:after, section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreview div.nodeParent.bWizMsgPanel:before {
+              top: 100%;
+              left: 50%;
+              border: solid transparent;
+              content: " ";
+              height: 0;
+              width: 0;
+              position: absolute;
+              pointer-events: none;
+              z-index: 400; }
+            /* line 22, ../../sass/cltool/_interface.scss */
+            section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreview div.nodeParent.bWizMsgPanel:after {
+              border-color: rgba(35, 116, 198, 0);
+              border-top-color: #2374c6;
+              border-width: 0.75em;
+              margin-left: -0.75em; }
+            /* line 28, ../../sass/cltool/_interface.scss */
+            section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreview div.nodeParent.bWizMsgPanel:before {
+              border-color: rgba(35, 116, 198, 0);
+              border-top-color: #2374c6;
+              border-width: 1em;
+              margin-left: -1em; }
+            /* line 578, ../../sass/cltool/_interface.scss */
+            section.uscWizContainer div.uscWizWrapper article.uscWizLayout div.uscWizPreview div.nodeParent.bWizMsgPanel:hover {
+              background: #f9f9f9 url("../../branding/themes/usc/custom/images/bbwizard/bb_line_diagonal1.png"); }
