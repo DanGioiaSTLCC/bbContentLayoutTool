@@ -1,4 +1,14 @@
-/* Bb Plus v2 (Heuro) */
+/*--------------------------------------
+ Bb Plus v2 (Heuro) 
+ University of the Sunshine Coast
+ Date: Nov 2015
+
+ Blackboard+ HTML artifacts for use 
+ with the Content Layout Tool.
+
+ Author: Tim Jensen
+ Author URL: www.timjensen.com.au
+--------------------------------------*/
 /* General */
 /* Content Structure */
 /* Content Layout  */
@@ -6,161 +16,816 @@
 /* Panel */
 /* Bb System */
 /* UNUSED FOR NOW */
-article.bbplus, div.bbplus { line-height: 1.3em; display: block; position: relative; font-size: 13px; font-weight: 300; color: #151217; /* Some normalise styles from normalize.css v3.0.2 | MIT License | git.io/normalize */ -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; /* Normalise margin/padding */ /* Content Structures */ /* Content Layouts */ }
-article.bbplus div, div.bbplus div { display: block; }
-article.bbplus video, div.bbplus video { display: inline-block; vertical-align: baseline; }
-article.bbplus a, div.bbplus a { background-color: transparent; }
-article.bbplus a:active, article.bbplus a:hover, div.bbplus a:active, div.bbplus a:hover { outline: 0; }
-article.bbplus mark, div.bbplus mark { background: #ff0; color: #000; }
-article.bbplus small, div.bbplus small { font-size: 80%; }
-article.bbplus sub, article.bbplus sup, div.bbplus sub, div.bbplus sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
-article.bbplus sup, div.bbplus sup { top: -.5em; }
-article.bbplus sub, div.bbplus sub { bottom: -.25em; }
-article.bbplus img, div.bbplus img { border: 0; }
-article.bbplus svg:not(:root), div.bbplus svg:not(:root) { overflow: hidden; }
-article.bbplus figure, div.bbplus figure { margin: 1em 40px; }
-article.bbplus hr, div.bbplus hr { -moz-box-sizing: content-box; box-sizing: content-box; height: 0; }
-article.bbplus pre, div.bbplus pre { overflow: auto; }
-article.bbplus code, article.bbplus kbd, article.bbplus pre, article.bbplus samp, div.bbplus code, div.bbplus kbd, div.bbplus pre, div.bbplus samp { font-family: monospace,monospace; font-size: 1em; }
-article.bbplus table, div.bbplus table { border-collapse: collapse; border-spacing: 0; }
-article.bbplus td, article.bbplus th, div.bbplus td, div.bbplus th { padding: 0; }
-article.bbplus div, article.bbplus p, article.bbplus h1, article.bbplus h2, article.bbplus h3, article.bbplus h4, article.bbplus h5, article.bbplus h6, div.bbplus div, div.bbplus p, div.bbplus h1, div.bbplus h2, div.bbplus h3, div.bbplus h4, div.bbplus h5, div.bbplus h6 { margin: 0; padding: 0; }
-article.bbplus h1, article.bbplus h2, article.bbplus h3, div.bbplus h1, div.bbplus h2, div.bbplus h3 { font-weight: 500; margin: 1.5em 0 0.5em; color: #32233e; }
-article.bbplus h4, article.bbplus h5, article.bbplus h6, div.bbplus h4, div.bbplus h5, div.bbplus h6 { font-weight: 600; margin: 1em 0 0.5em; }
-article.bbplus h1, div.bbplus h1 { font-size: 2.5em; }
-article.bbplus h2, div.bbplus h2 { font-size: 2em; }
-article.bbplus h3, div.bbplus h3 { font-size: 1.34em; }
-article.bbplus h4, article.bbplus h5, article.bbplus h6, div.bbplus h4, div.bbplus h5, div.bbplus h6 { font-size: 1.1em; }
-article.bbplus p, div.bbplus p { margin: 1em 0; }
-article.bbplus ul, article.bbplus ol, div.bbplus ul, div.bbplus ol { padding-top: 0.5em; padding-bottom: 0.5em; }
-article.bbplus ul li, article.bbplus ol li, div.bbplus ul li, div.bbplus ol li { padding: 0.25em 0; }
-article.bbplus ul, div.bbplus ul { list-style-type: disc; }
-article.bbplus a, div.bbplus a { color: #205080; }
-article.bbplus span.subhead, div.bbplus span.subhead { position: relative; display: block; padding: 1em 0; margin: 1em 0 2em; border-bottom: 1px solid #cccccc; font-size: 0.5em; text-transform: uppercase; letter-spacing: 0.1em; background-color: #fff; }
-article.bbplus header, div.bbplus header { text-align: center; }
-article.bbplus header h2, div.bbplus header h2 { font-size: 36px; }
-article.bbplus.bbp-struct, div.bbplus.bbp-struct { text-align: center; margin: 2em 0 2em; /* Intro panel for Topic/Module/Week */ }
-article.bbplus.bbp-struct p, article.bbplus.bbp-struct ul, article.bbplus.bbp-struct ol, div.bbplus.bbp-struct p, div.bbplus.bbp-struct ul, div.bbplus.bbp-struct ol { color: #151217; text-align: left; }
-article.bbplus.bbp-struct.bbp-struct-learning-outcomes, div.bbplus.bbp-struct.bbp-struct-learning-outcomes { margin: 0; padding: 1em 0; background-color: #f8f8f8; }
-article.bbplus.bbp-struct.bbp-struct-learning-outcomes h4, div.bbplus.bbp-struct.bbp-struct-learning-outcomes h4 { border-bottom: 1px solid #cccccc; background-color: #fff; padding: 2em; text-transform: uppercase; letter-spacing: 0.1em; }
-article.bbplus.bbp-struct.bbp-struct-learning-outcomes ol, div.bbplus.bbp-struct.bbp-struct-learning-outcomes ol { width: 70%; margin: 1em auto; padding: 1em 4em; }
-article.bbplus.bbp-struct.bbp-struct-learning-outcomes ol li, div.bbplus.bbp-struct.bbp-struct-learning-outcomes ol li { margin: 0.5em 0em 0.5em 0; padding: 0.5em 1em 0.5em 1em; border-bottom: 1px solid #cccccc; text-align: left; }
-article.bbplus.bbp-struct.bbp-declaration, div.bbplus.bbp-struct.bbp-declaration { margin: 2em 1em; padding: 2em 4em 3em; border-top: 4px solid #205080; background: url("../img/bbplus_grid_noise.png"), linear-gradient(180deg, #fcfdfd, #ecf1f3), center no-repeat #e1f2f1 scroll; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); color: rgba(58, 67, 71, 0.9); }
-article.bbplus.bbp-struct.bbp-declaration:before, div.bbplus.bbp-struct.bbp-declaration:before { content: ""; background: url("../img/bbplus_declaration_usc_watermark.png") no-repeat; display: block; width: 10em; height: 5em; position: absolute; top: 5em; left: 50%; margin-left: -5em; }
-article.bbplus.bbp-struct.bbp-declaration h3, div.bbplus.bbp-struct.bbp-declaration h3 { margin: 8em 0 4em; color: rgba(32, 80, 128, 0.8); text-transform: uppercase; letter-spacing: 0.2em; }
-article.bbplus.bbp-struct.bbp-declaration h4, div.bbplus.bbp-struct.bbp-declaration h4 { color: rgba(32, 80, 128, 0.8); }
-article.bbplus.bbp-struct.bbp-declaration div#usc-ack, div.bbplus.bbp-struct.bbp-declaration div#usc-ack { margin: 3em 0 0; }
-article.bbplus.bbp-struct.bbp-declaration div#usc-ack a, div.bbplus.bbp-struct.bbp-declaration div#usc-ack a { padding: 2em 3em; display: block; color: #fff; background-color: #9fb7c1; text-transform: uppercase; }
-article.bbplus.bbp-struct.bbp-declaration div#usc-ack a:hover, div.bbplus.bbp-struct.bbp-declaration div#usc-ack a:hover { background-color: #809fad; }
-article.bbplus.bbp-struct.bbp-declaration ul, div.bbplus.bbp-struct.bbp-declaration ul { margin: 1em 0; list-style-type: upper-roman; border-top: 1px solid rgba(190, 206, 213, 0.8); border-bottom: 1px solid rgba(190, 206, 213, 0.8); }
-article.bbplus.bbp-struct.bbp-declaration ul > li, div.bbplus.bbp-struct.bbp-declaration ul > li { margin: 0 1em; padding: 1em 2em 1em 1em; border-bottom: 1px solid #beced5; color: rgba(58, 67, 71, 0.9); }
-article.bbplus.bbp-struct.bbp-declaration ul > li:last-child, div.bbplus.bbp-struct.bbp-declaration ul > li:last-child { border-bottom: none; }
-article.bbplus.bbp-struct.bbp-declaration ol, div.bbplus.bbp-struct.bbp-declaration ol { list-style-type: lower-alpha; }
-article.bbplus.bbp-struct.bbp-declaration ol li ol, div.bbplus.bbp-struct.bbp-declaration ol li ol { list-style-type: lower-roman; }
-article.bbplus.bbp-struct.bbp-declaration div.bbp-info-panel, div.bbplus.bbp-struct.bbp-declaration div.bbp-info-panel { margin: 1em 0; box-shadow: none; border-top: 4px solid rgba(32, 80, 128, 0.8); }
-article.bbplus.bbp-struct.bbp-declaration:focus div.bbp-info-panel, div.bbplus.bbp-struct.bbp-declaration:focus div.bbp-info-panel { display: block; }
-article.bbplus.bbp-struct.bbp-struct-intro, div.bbplus.bbp-struct.bbp-struct-intro { background-color: #f8f8f8; padding-bottom: 2em; /* Need this in place of pseudo-content - ARIA */ }
-article.bbplus.bbp-struct.bbp-struct-intro:before, div.bbplus.bbp-struct.bbp-struct-intro:before { content: "Depreciated"; font-size: 3em; font-weight: 500; text-transform: uppercase; letter-spacing: 0.3em; color: #ec712d; line-height: 1em; padding-top: 3em; position: absolute; top: 0; left: 0; bottom: 0; width: 100%; background: rgba(236, 113, 45, 0.2) url("../img/bbplus_diagonal-noise.png"); }
-article.bbplus.bbp-struct.bbp-struct-intro h1, div.bbplus.bbp-struct.bbp-struct-intro h1 { color: #32233e; margin-bottom: 1em; }
-article.bbplus.bbp-struct.bbp-struct-intro h1 span.subhead, div.bbplus.bbp-struct.bbp-struct-intro h1 span.subhead { padding: 0 0 3em; margin: 0 0 4em; border-bottom: 1px solid #cccccc; font-size: 0.4em; background-color: #fff; }
-article.bbplus.bbp-struct.bbp-struct-intro h1 span.subhead:after, div.bbplus.bbp-struct.bbp-struct-intro h1 span.subhead:after { position: absolute; left: 50%; bottom: -1em; margin-left: -1em; content: "\f135"; font-family: "FontAwesome"; display: block; width: 1em; height: 1em; border-radius: 1em; background-color: #32233e; color: #fff; font-size: 2em; padding: 0.7em 0.5em 0.3em; }
-article.bbplus.bbp-struct.bbp-struct-intro p, div.bbplus.bbp-struct.bbp-struct-intro p { line-height: 1.5em; padding: 2em; }
-article.bbplus.bbp-struct.bbp-struct-intro > h2, div.bbplus.bbp-struct.bbp-struct-intro > h2 { text-transform: uppercase; font-size: 1em; letter-spacing: 0.1em; }
-article.bbplus.bbp-struct.bbp-struct-intro h3, div.bbplus.bbp-struct.bbp-struct-intro h3 { text-transform: uppercase; }
-article.bbplus.bbp-struct.bbp-struct-intro ol.bbp-learning-outcomes, div.bbplus.bbp-struct.bbp-struct-intro ol.bbp-learning-outcomes { width: 70%; margin: 2em auto; padding: 2em 4em; border: 1px solid #cccccc; border-radius: 0.5em; background-color: white; /* Need heading in place of pseudo-content - ARIA */ 				/*&:before {
-					display: block;
-					content: "Learning Outcomes";
-					font-weight: 600;
-					text-align: center;
-					text-transform: uppercase;
-					letter-spacing: 0.1em;
-					padding-bottom: 1em;
-					}
-
-				}
-				*/ }
-article.bbplus.bbp-struct.bbp-struct-intro ol.bbp-learning-outcomes li, div.bbplus.bbp-struct.bbp-struct-intro ol.bbp-learning-outcomes li { margin: 0.5em 0em 0.5em 0; padding: 0.5em 1em 0.5em 1em; border-bottom: 1px solid #cccccc; text-align: left; }
-article.bbplus.bbp-struct.bbp-struct-divider, div.bbplus.bbp-struct.bbp-struct-divider { border-bottom: 1px solid #cccccc; text-align: center; margin-bottom: 3em; }
-article.bbplus.bbp-struct.bbp-struct-divider:before, div.bbplus.bbp-struct.bbp-struct-divider:before { content: "Depreciated"; font-size: 3em; font-weight: 500; text-transform: uppercase; letter-spacing: 0.3em; color: #ec712d; line-height: 1em; padding-top: 3em; position: absolute; top: 0; left: 0; bottom: 0; width: 100%; background: rgba(236, 113, 45, 0.2) url("../img/bbplus_diagonal-noise.png"); }
-article.bbplus.bbp-struct.bbp-struct-divider h2, div.bbplus.bbp-struct.bbp-struct-divider h2 { position: relative; top: 3.1em; display: inline-block; padding: 0 0.75em; background-color: #fff; font-size: 1em; text-transform: uppercase; letter-spacing: 0.1em; }
-article.bbplus.bbp-struct.bbp-struct-divider h2:before, div.bbplus.bbp-struct.bbp-struct-divider h2:before { position: absolute; left: 50%; top: -1.75em; margin-left: -1em; content: "\f135"; font-family: "FontAwesome"; display: block; width: 1em; height: 1em; border-radius: 1em; color: #32233e; font-size: 2em; padding: 0.5em; }
-article.bbplus.bbp-layout, div.bbplus.bbp-layout { margin: 2em 0 0; /*---- Table - Default  ----*/ /*---- Activity - Default  ----*/ }
-article.bbplus.bbp-layout.bbp-table table, div.bbplus.bbp-layout.bbp-table table { width: 100%; border-spacing: 0; border-padding: 0; }
-article.bbplus.bbp-layout.bbp-table table tr td, div.bbplus.bbp-layout.bbp-table table tr td { padding: 0.2em 0.5em; border-bottom: 1px solid #ccc; }
-article.bbplus.bbp-layout.bbp-table table thead tr th, div.bbplus.bbp-layout.bbp-table table thead tr th { padding: 0.5em 0.5em; margin-bottom: 0.75em; border-bottom: 1px solid #b3b3b3; color: #32233e; }
-article.bbplus.bbp-layout.bbp-table.bbp-table-expanded table tr td, div.bbplus.bbp-layout.bbp-table.bbp-table-expanded table tr td { padding: 0.6em 0.5em; }
-article.bbplus.bbp-layout.bbp-table.bbp-table-bordered table, div.bbplus.bbp-layout.bbp-table.bbp-table-bordered table { border: 1px solid #ccc; border-radius: 0.3em; overflow: hidden; }
-article.bbplus.bbp-layout.bbp-table.bbp-table-bordered table tr td, div.bbplus.bbp-layout.bbp-table.bbp-table-bordered table tr td { padding: 0.6em 0.5em; }
-article.bbplus.bbp-layout.bbp-table.bbp-table-bordered table tr:last-child td, div.bbplus.bbp-layout.bbp-table.bbp-table-bordered table tr:last-child td { border-bottom: none; }
-article.bbplus.bbp-layout.bbp-table.bbp-table-bordered table thead tr th, div.bbplus.bbp-layout.bbp-table.bbp-table-bordered table thead tr th { background-color: #32233e; color: #fff; font-weight: 400; }
-article.bbplus.bbp-layout.bbp-table.bbp-table-striped table tr td, div.bbplus.bbp-layout.bbp-table.bbp-table-striped table tr td { padding: 0.5em; }
-article.bbplus.bbp-layout.bbp-table.bbp-table-striped table tr:nth-child(even) td, div.bbplus.bbp-layout.bbp-table.bbp-table-striped table tr:nth-child(even) td { background-color: #f2f2f2; }
-article.bbplus.bbp-layout.bbp-activity, div.bbplus.bbp-layout.bbp-activity { padding: 2em 2em 2em 4em; border-top: 1px solid #81bde3; border-bottom: 1px solid #81bde3; /*---- Activity - Read  ----*/ /*---- Activity - Watch  ----*/ /*---- Activity - Apply  ----*/ /*---- Activity - Discuss  ----*/ /*---- Activity - Module  ----*/ /*---- Activity - Group  ----*/ /*---- Activity - Lecture Notes  ----*/ /*---- Activity - Lab  ----*/ /*---- Activity - Quiz  ----*/ /*---- Activity - Recap  ----*/ }
-article.bbplus.bbp-layout.bbp-activity h4, div.bbplus.bbp-layout.bbp-activity h4 { margin: 0; color: #1b577d; }
-article.bbplus.bbp-layout.bbp-activity h4 span:nth-of-type(1), div.bbplus.bbp-layout.bbp-activity h4 span:nth-of-type(1) { display: block; text-transform: uppercase; padding: 0.25em 0; margin-bottom: 1em; font-size: 0.9em; letter-spacing: 0.1em; color: #2e91d0; }
-article.bbplus.bbp-layout.bbp-activity:before, div.bbplus.bbp-layout.bbp-activity:before { position: absolute; left: 1.5em; top: -0.5em; margin-left: -1em; content: "\f085"; font-family: "FontAwesome"; display: block; width: 1.4em; height: 1.4em; color: #57a7da; font-size: 1.5em; padding: 2em 0.25em 0em; text-align: center; display: inline-block; }
-article.bbplus.bbp-layout.bbp-activity.bbp-act-read:before, div.bbplus.bbp-layout.bbp-activity.bbp-act-read:before { content: "\f02d"; }
-article.bbplus.bbp-layout.bbp-activity.bbp-act-watch:before, div.bbplus.bbp-layout.bbp-activity.bbp-act-watch:before { content: "\f04b"; }
-article.bbplus.bbp-layout.bbp-activity.bbp-act-apply:before, div.bbplus.bbp-layout.bbp-activity.bbp-act-apply:before { content: "\f00c"; }
-article.bbplus.bbp-layout.bbp-activity.bbp-act-discuss:before, div.bbplus.bbp-layout.bbp-activity.bbp-act-discuss:before { content: "\f086"; }
-article.bbplus.bbp-layout.bbp-activity.bbp-act-module:before, div.bbplus.bbp-layout.bbp-activity.bbp-act-module:before { content: "\f0e8"; }
-article.bbplus.bbp-layout.bbp-activity.bbp-act-group:before, div.bbplus.bbp-layout.bbp-activity.bbp-act-group:before { content: "\f0c0"; }
-article.bbplus.bbp-layout.bbp-activity.bbp-act-lecturenotes:before, div.bbplus.bbp-layout.bbp-activity.bbp-act-lecturenotes:before { content: "\f022"; }
-article.bbplus.bbp-layout.bbp-activity.bbp-act-lab:before, div.bbplus.bbp-layout.bbp-activity.bbp-act-lab:before { content: "\f0c3"; }
-article.bbplus.bbp-layout.bbp-activity.bbp-act-quiz:before, div.bbplus.bbp-layout.bbp-activity.bbp-act-quiz:before { content: "\f128"; }
-article.bbplus.bbp-layout.bbp-activity.bbp-act-recap:before, div.bbplus.bbp-layout.bbp-activity.bbp-act-recap:before { content: "\f021"; }
-article.bbplus.bbp-layout.bbp-resource, div.bbplus.bbp-layout.bbp-resource { padding: 2em 2em 2em 4em; background: url("../img/bbplus_diagonal-noise.png"), center no-repeat scroll; border: 1px dashed #81c9e3; overflow: hidden; /*---- Resource - Lecture Notes  ----*/ /*---- Resource - Files  ----*/ }
-article.bbplus.bbp-layout.bbp-resource h4, div.bbplus.bbp-layout.bbp-resource h4 { margin: 0; color: #1b637d; }
-article.bbplus.bbp-layout.bbp-resource h4 span:nth-of-type(1), div.bbplus.bbp-layout.bbp-resource h4 span:nth-of-type(1) { display: block; text-transform: uppercase; padding: 0.25em 0; margin-bottom: 1em; font-size: 0.9em; letter-spacing: 0.1em; color: #2ea5d0; }
-article.bbplus.bbp-layout.bbp-resource:before, div.bbplus.bbp-layout.bbp-resource:before { position: absolute; left: 1.5em; top: -0.5em; margin-left: -1em; content: "\f16c"; font-family: "FontAwesome"; display: block; width: 1.4em; height: 1.4em; color: #57b7da; font-size: 1.5em; padding: 2em 0.25em 0em; text-align: center; display: inline-block; }
-article.bbplus.bbp-layout.bbp-resource.bbp-res-lnotes:before, div.bbplus.bbp-layout.bbp-resource.bbp-res-lnotes:before { content: "\f022"; }
-article.bbplus.bbp-layout.bbp-resource.bbp-res-files:before, div.bbplus.bbp-layout.bbp-resource.bbp-res-files:before { content: "\F15B"; }
-article.bbplus.bbp-layout.bbp-info-panel, div.bbplus.bbp-layout.bbp-info-panel { margin: 2em 2em 0; padding: 1em 2em 2em; background-color: #f1f1f1; border: 1px solid #d8d8d8; border-top: 4px solid #bebebe; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25); }
-article.bbplus.bbp-layout.bbp-info-panel:after, div.bbplus.bbp-layout.bbp-info-panel:after { position: absolute; right: 1em; top: 2.5em; content: "\f129"; font-family: "FontAwesome"; display: block; width: 1.4em; height: 1.4em; border-radius: 1.5em; background-color: #bebebe; box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25); color: #f1f1f1; font-size: 1.25em; padding: 0.5em 0.25em 0em; text-align: center; display: inline-block; }
-article.bbplus.bbp-layout.bbp-info-panel h4, div.bbplus.bbp-layout.bbp-info-panel h4 { padding: 0 2.5em 0.75em 0; border-bottom: 1px solid #bebebe; /*>span {
-	display: none; //OLD - hides 'underline' option in WYSYIG editor too
-	}*/ }
-article.bbplus.bbp-layout.bbp-info-panel p, div.bbplus.bbp-layout.bbp-info-panel p { padding-right: 3em; }
-article.bbplus.bbp-layout.bbp-info-panel.bbp-info-tip, div.bbplus.bbp-layout.bbp-info-panel.bbp-info-tip { background: linear-gradient(180deg, #efda94, #e8cb68), center no-repeat scroll; border: 1px solid #e1bc3c; border-top: 4px solid #cba41f; color: #5c4b0e; }
-article.bbplus.bbp-layout.bbp-info-panel.bbp-info-tip:after, div.bbplus.bbp-layout.bbp-info-panel.bbp-info-tip:after { content: "\f0eb"; background-color: #cba41f; color: #e8cb68; }
-article.bbplus.bbp-layout.bbp-info-panel.bbp-info-tip h4, div.bbplus.bbp-layout.bbp-info-panel.bbp-info-tip h4 { color: #735d11; border-bottom: 1px solid #cba41f; }
-article.bbplus.bbp-layout.bbp-info-panel.bbp-info-key, div.bbplus.bbp-layout.bbp-info-panel.bbp-info-key { background: linear-gradient(180deg, #add592, #91c76d), center no-repeat scroll; border: 1px solid #75b948; border-top: 4px solid #5e9539; color: #243916; }
-article.bbplus.bbp-layout.bbp-info-panel.bbp-info-key:after, div.bbplus.bbp-layout.bbp-info-panel.bbp-info-key:after { content: "\f084"; background-color: #5e9539; color: #91c76d; }
-article.bbplus.bbp-layout.bbp-info-panel.bbp-info-key h4, div.bbplus.bbp-layout.bbp-info-panel.bbp-info-key h4 { color: #2f4b1d; border-bottom: 1px solid #5e9539; }
-article.bbplus.bbp-layout.bbp-info-panel.bbp-info-warning, div.bbplus.bbp-layout.bbp-info-panel.bbp-info-warning { background: linear-gradient(180deg, #efa17b, #ea814d), center no-repeat scroll; border: 1px solid #e5611f; border-top: 4px solid #bb4d16; color: #491e09; }
-article.bbplus.bbp-layout.bbp-info-panel.bbp-info-warning:after, div.bbplus.bbp-layout.bbp-info-panel.bbp-info-warning:after { content: "\f071"; background-color: #bb4d16; color: #ea814d; }
-article.bbplus.bbp-layout.bbp-info-panel.bbp-info-warning h4, div.bbplus.bbp-layout.bbp-info-panel.bbp-info-warning h4 { color: #60270b; border-bottom: 1px solid #bb4d16; }
-article.bbplus.bbp-layout.bbp-image-panel:after, div.bbplus.bbp-layout.bbp-image-panel:after { clear: both; content: ""; display: table; }
-article.bbplus.bbp-layout.bbp-image-panel h4, div.bbplus.bbp-layout.bbp-image-panel h4 { margin-top: 0; }
-article.bbplus.bbp-layout.bbp-image-panel img, article.bbplus.bbp-layout.bbp-image-panel object, div.bbplus.bbp-layout.bbp-image-panel img, div.bbplus.bbp-layout.bbp-image-panel object { height: auto; float: left; margin: 0 1em 0.5em 0; }
-article.bbplus.bbp-layout.bbp-image-panel.bbp-image-panel-bordered, div.bbplus.bbp-layout.bbp-image-panel.bbp-image-panel-bordered { padding: 1em; border: 1px solid #bebebe; }
-article.bbplus.bbp-layout.bbp-image-panel.bbp-image-panel-bordered h4, div.bbplus.bbp-layout.bbp-image-panel.bbp-image-panel-bordered h4 { margin-top: 1em; }
-article.bbplus.bbp-layout.bbp-image-panel.bbp-image-panel-right img, article.bbplus.bbp-layout.bbp-image-panel.bbp-image-panel-right object, div.bbplus.bbp-layout.bbp-image-panel.bbp-image-panel-right img, div.bbplus.bbp-layout.bbp-image-panel.bbp-image-panel-right object { float: right; margin: 0 0 0.5em 1em; }
-article.bbplus.bbp-layout.bbp-copyright, div.bbplus.bbp-layout.bbp-copyright { background-color: #f1f1f1; margin: 1em 0; padding: 1em 2em; max-width: 80%; }
-article.bbplus.bbp-layout.bbp-copyright:after, div.bbplus.bbp-layout.bbp-copyright:after { clear: both; content: ""; display: table; }
-article.bbplus.bbp-layout.bbp-copyright h5, div.bbplus.bbp-layout.bbp-copyright h5 { font-size: 1em; }
-article.bbplus.bbp-layout.bbp-copyright p, div.bbplus.bbp-layout.bbp-copyright p { font-size: 0.8em; line-height: 1.1em; }
-article.bbplus.bbp-system, div.bbplus.bbp-system { margin: 1em 1.5em; }
-article.bbplus.bbp-system.bbp-annotation-panel, div.bbplus.bbp-system.bbp-annotation-panel { position: absolute; width: 20em; right: -13em; margin: 0; padding: 0 0 2em 0; background: linear-gradient(90deg, #9b92a2 30%, #81768b 100%), center no-repeat scroll; font-size: 0.9em; font-weight: 600; text-align: left; float: left; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); z-index: 10000; color: #fff; }
-article.bbplus.bbp-system.bbp-annotation-panel h3, div.bbplus.bbp-system.bbp-annotation-panel h3 { font-weight: 300; padding: 1rem 3rem 1rem 2rem; margin: 0 0 1em 0; color: #1b181d; border-bottom: 1px solid #685e70; }
-article.bbplus.bbp-system.bbp-annotation-panel h3:after, div.bbplus.bbp-system.bbp-annotation-panel h3:after { position: absolute; right: 0.6em; top: 0.2em; font-family: "FontAwesome"; display: block; width: 1em; height: 1em; color: #fff; font-size: 1.25em; padding: 0.5em 0.25em 0em; text-align: center; display: inline-block; }
-article.bbplus.bbp-system.bbp-annotation-panel h3.bbp-annotation-organisation:after, div.bbplus.bbp-system.bbp-annotation-panel h3.bbp-annotation-organisation:after { content: "\f00a"; }
-article.bbplus.bbp-system.bbp-annotation-panel h3.bbp-annotation-course-structure:after, div.bbplus.bbp-system.bbp-annotation-panel h3.bbp-annotation-course-structure:after { content: "\f0e8"; }
-article.bbplus.bbp-system.bbp-annotation-panel h3.bbp-annotation-learning-content:after, div.bbplus.bbp-system.bbp-annotation-panel h3.bbp-annotation-learning-content:after { content: "\f0f6"; }
-article.bbplus.bbp-system.bbp-annotation-panel h3.bbp-annotation-collaboration:after, div.bbplus.bbp-system.bbp-annotation-panel h3.bbp-annotation-collaboration:after { content: "\f0e6"; }
-article.bbplus.bbp-system.bbp-annotation-panel h3.bbp-annotation-assessment:after, div.bbplus.bbp-system.bbp-annotation-panel h3.bbp-annotation-assessment:after { content: "\f087"; }
-article.bbplus.bbp-system.bbp-annotation-panel h4, div.bbplus.bbp-system.bbp-annotation-panel h4 { margin: 0; padding: 0.5rem 2rem; }
-article.bbplus.bbp-system.bbp-annotation-panel p, div.bbplus.bbp-system.bbp-annotation-panel p { font-weight: 300; margin: 0; padding: 0.5rem 2rem; }
-article.bbplus.bbp-system.bbp-annotation-panel:after, div.bbplus.bbp-system.bbp-annotation-panel:after { position: absolute; left: -1.1em; top: 0.8em; content: ""; width: 0; height: 0; border-top: 1.2em solid transparent; border-bottom: 1.2em solid transparent; border-right: 1.2em solid #9b92a2; }
-article.bbplus.bbp-system.bbp-annotation-panel.bbp-annotation-structuring, div.bbplus.bbp-system.bbp-annotation-panel.bbp-annotation-structuring { background: linear-gradient(90deg, #d35069 30%, #d8647a 100%), center no-repeat scroll; }
-article.bbplus.bbp-system.bbp-annotation-panel.bbp-annotation-structuring:after, div.bbplus.bbp-system.bbp-annotation-panel.bbp-annotation-structuring:after { border-right-color: #d35069; }
-article.bbplus.bbp-system.bbp-annotation-panel.bbp-annotation-structuring h3, div.bbplus.bbp-system.bbp-annotation-panel.bbp-annotation-structuring h3 { background-color: #d35069; border-bottom: 1px solid #dd798c; color: #fff; }
-article.bbplus.bbp-system.bbp-annotation-panel.bbp-annotation-engaging, div.bbplus.bbp-system.bbp-annotation-panel.bbp-annotation-engaging { background: linear-gradient(90deg, #f7555d 30%, #f86d74 100%), center no-repeat scroll; }
-article.bbplus.bbp-system.bbp-annotation-panel.bbp-annotation-engaging:after, div.bbplus.bbp-system.bbp-annotation-panel.bbp-annotation-engaging:after { border-right-color: #f7555d; }
-article.bbplus.bbp-system.bbp-annotation-panel.bbp-annotation-engaging h3, div.bbplus.bbp-system.bbp-annotation-panel.bbp-annotation-engaging h3 { background-color: #f7555d; border-bottom: 1px solid #f9868b; color: #fff; }
-article.bbplus.bbp-system.bbp-tooltip, div.bbplus.bbp-system.bbp-tooltip { position: absolute; width: 20em; right: -20em; margin: 0; padding: 2em; border-top: 4px solid #4290cc; background: linear-gradient(90deg, #bad7ed 30%, #92bfe2 100%), center no-repeat scroll; font-size: 0.9em; font-weight: 600; text-align: left; float: left; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); z-index: 10000; color: #4290cc; }
-article.bbplus.bbp-system.bbp-tooltip h3, div.bbplus.bbp-system.bbp-tooltip h3 { padding: 0.5em 0; margin: 2em 0 1em; color: #245a84; border-bottom: 1px solid #6aa8d7; }
-article.bbplus.bbp-system.bbp-tooltip h3:after, div.bbplus.bbp-system.bbp-tooltip h3:after { position: absolute; left: 1em; top: 0.5em; content: "\f129"; font-family: "FontAwesome"; display: block; width: 1em; height: 1em; border-radius: 1.5em; background-color: #2f76ac; box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25); color: #4290cc; font-size: 1.25em; padding: 0.5em 0.25em 0em; text-align: center; display: inline-block; }
-article.bbplus.bbp-system.bbp-tooltip p, div.bbplus.bbp-system.bbp-tooltip p { font-weight: 300; }
-article.bbplus.bbp-system.bbp-tooltip:before, div.bbplus.bbp-system.bbp-tooltip:before { position: absolute; left: 4em; top: 1.1em; content: "Bb+ Help"; display: inline-block; font-size: 1.25em; color: #4290cc; }
-article.bbplus.bbp-system.bbp-tooltip:after, div.bbplus.bbp-system.bbp-tooltip:after { position: absolute; left: -1.1em; top: 1em; content: ""; width: 0; height: 0; border-top: 1.2em solid transparent; border-bottom: 1.2em solid transparent; border-right: 1.2em solid #bad7ed; }
+article.bbplus, div.bbplus {
+  line-height: 1.3em;
+  display: block;
+  position: relative;
+  font-size: 13px;
+  font-weight: 300;
+  color: #151217;
+  /* Some normalise styles from normalize.css v3.0.2 | MIT License | git.io/normalize */
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  /* Normalise margin/padding */
+  /* Content Structures */
+  /* Content Layouts */
+}
+article.bbplus div, div.bbplus div {
+  display: block;
+}
+article.bbplus video, div.bbplus video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+article.bbplus a, div.bbplus a {
+  background-color: transparent;
+}
+article.bbplus a:active, article.bbplus a:hover, div.bbplus a:active, div.bbplus a:hover {
+  outline: 0;
+}
+article.bbplus mark, div.bbplus mark {
+  background: #ff0;
+  color: #000;
+}
+article.bbplus small, div.bbplus small {
+  font-size: 80%;
+}
+article.bbplus sub, article.bbplus sup, div.bbplus sub, div.bbplus sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+article.bbplus sup, div.bbplus sup {
+  top: -.5em;
+}
+article.bbplus sub, div.bbplus sub {
+  bottom: -.25em;
+}
+article.bbplus img, div.bbplus img {
+  border: 0;
+}
+article.bbplus svg:not(:root), div.bbplus svg:not(:root) {
+  overflow: hidden;
+}
+article.bbplus figure, div.bbplus figure {
+  margin: 1em 40px;
+}
+article.bbplus hr, div.bbplus hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+article.bbplus pre, div.bbplus pre {
+  overflow: auto;
+}
+article.bbplus code, article.bbplus kbd, article.bbplus pre, article.bbplus samp, div.bbplus code, div.bbplus kbd, div.bbplus pre, div.bbplus samp {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+article.bbplus table, div.bbplus table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+article.bbplus td, article.bbplus th, div.bbplus td, div.bbplus th {
+  padding: 0;
+}
+article.bbplus div, article.bbplus p, article.bbplus h1, article.bbplus h2, article.bbplus h3, article.bbplus h4, article.bbplus h5, article.bbplus h6, div.bbplus div, div.bbplus p, div.bbplus h1, div.bbplus h2, div.bbplus h3, div.bbplus h4, div.bbplus h5, div.bbplus h6 {
+  margin: 0;
+  padding: 0;
+}
+article.bbplus h1, article.bbplus h2, article.bbplus h3, div.bbplus h1, div.bbplus h2, div.bbplus h3 {
+  font-weight: 500;
+  margin: 1.5em 0 0.5em;
+  color: #32233e;
+}
+article.bbplus h4, article.bbplus h5, article.bbplus h6, div.bbplus h4, div.bbplus h5, div.bbplus h6 {
+  font-weight: 600;
+  margin: 1em 0 0.5em;
+}
+article.bbplus h1, div.bbplus h1 {
+  font-size: 2.5em;
+}
+article.bbplus h2, div.bbplus h2 {
+  font-size: 2em;
+}
+article.bbplus h3, div.bbplus h3 {
+  font-size: 1.34em;
+}
+article.bbplus h4, article.bbplus h5, article.bbplus h6, div.bbplus h4, div.bbplus h5, div.bbplus h6 {
+  font-size: 1.1em;
+}
+article.bbplus p, div.bbplus p {
+  margin: 1em 0;
+}
+article.bbplus ul, article.bbplus ol, div.bbplus ul, div.bbplus ol {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+article.bbplus ul li, article.bbplus ol li, div.bbplus ul li, div.bbplus ol li {
+  padding: 0.25em 0;
+}
+article.bbplus ul, div.bbplus ul {
+  list-style-type: disc;
+}
+article.bbplus a, div.bbplus a {
+  color: #205080;
+}
+article.bbplus span.subhead, div.bbplus span.subhead {
+  position: relative;
+  display: block;
+  padding: 1em 0;
+  margin: 1em 0 2em;
+  border-bottom: 1px solid #cccccc;
+  font-size: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background-color: #fff;
+}
+article.bbplus header, div.bbplus header {
+  text-align: center;
+}
+article.bbplus header h2, div.bbplus header h2 {
+  font-size: 36px;
+}
+article.bbplus.bbp-struct, div.bbplus.bbp-struct {
+  text-align: center;
+  margin: 2em 0 2em;
+  /* Intro panel for Topic/Module/Week */
+}
+article.bbplus.bbp-struct p, article.bbplus.bbp-struct ul, article.bbplus.bbp-struct ol, div.bbplus.bbp-struct p, div.bbplus.bbp-struct ul, div.bbplus.bbp-struct ol {
+  color: #151217;
+  text-align: left;
+}
+article.bbplus.bbp-struct.bbp-struct-learning-outcomes, div.bbplus.bbp-struct.bbp-struct-learning-outcomes {
+  margin: 0;
+  padding: 1em 0;
+  background-color: #f8f8f8;
+}
+article.bbplus.bbp-struct.bbp-struct-learning-outcomes h4, div.bbplus.bbp-struct.bbp-struct-learning-outcomes h4 {
+  border-bottom: 1px solid #cccccc;
+  background-color: #fff;
+  padding: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+article.bbplus.bbp-struct.bbp-struct-learning-outcomes p, div.bbplus.bbp-struct.bbp-struct-learning-outcomes p {
+  padding: 1em 2em;
+}
+article.bbplus.bbp-struct.bbp-struct-learning-outcomes ol, div.bbplus.bbp-struct.bbp-struct-learning-outcomes ol {
+  width: 70%;
+  margin: 1em auto;
+  padding: 1em 4em;
+}
+article.bbplus.bbp-struct.bbp-struct-learning-outcomes ol li, div.bbplus.bbp-struct.bbp-struct-learning-outcomes ol li {
+  margin: 0.5em 0em 0.5em 0;
+  padding: 0.5em 1em 0.5em 1em;
+  border-bottom: 1px solid #cccccc;
+  text-align: left;
+}
+article.bbplus.bbp-struct.bbp-declaration, div.bbplus.bbp-struct.bbp-declaration {
+  margin: 2em 1em;
+  padding: 2em 4em 3em;
+  border-top: 4px solid #205080;
+  background: url("../img/bbplus_grid_noise.png"), linear-gradient(180deg, #fcfdfd, #ecf1f3), center no-repeat #e1f2f1 scroll;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: rgba(58, 67, 71, 0.9);
+}
+article.bbplus.bbp-struct.bbp-declaration:before, div.bbplus.bbp-struct.bbp-declaration:before {
+  content: "";
+  background: url("../img/bbplus_declaration_usc_watermark.png") no-repeat;
+  display: block;
+  width: 10em;
+  height: 5em;
+  position: absolute;
+  top: 5em;
+  left: 50%;
+  margin-left: -5em;
+}
+article.bbplus.bbp-struct.bbp-declaration h3, div.bbplus.bbp-struct.bbp-declaration h3 {
+  margin: 8em 0 4em;
+  color: rgba(32, 80, 128, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+article.bbplus.bbp-struct.bbp-declaration h4, div.bbplus.bbp-struct.bbp-declaration h4 {
+  color: rgba(32, 80, 128, 0.8);
+}
+article.bbplus.bbp-struct.bbp-declaration div#usc-ack, div.bbplus.bbp-struct.bbp-declaration div#usc-ack {
+  margin: 3em 0 0;
+}
+article.bbplus.bbp-struct.bbp-declaration div#usc-ack a, div.bbplus.bbp-struct.bbp-declaration div#usc-ack a {
+  padding: 2em 3em;
+  display: block;
+  color: #fff;
+  background-color: #9fb7c1;
+  text-transform: uppercase;
+}
+article.bbplus.bbp-struct.bbp-declaration div#usc-ack a:hover, div.bbplus.bbp-struct.bbp-declaration div#usc-ack a:hover {
+  background-color: #809fad;
+}
+article.bbplus.bbp-struct.bbp-declaration ul, div.bbplus.bbp-struct.bbp-declaration ul {
+  margin: 1em 0;
+  list-style-type: upper-roman;
+  border-top: 1px solid rgba(190, 206, 213, 0.8);
+  border-bottom: 1px solid rgba(190, 206, 213, 0.8);
+}
+article.bbplus.bbp-struct.bbp-declaration ul > li, div.bbplus.bbp-struct.bbp-declaration ul > li {
+  margin: 0 1em;
+  padding: 1em 2em 1em 1em;
+  border-bottom: 1px solid #beced5;
+  color: rgba(58, 67, 71, 0.9);
+}
+article.bbplus.bbp-struct.bbp-declaration ul > li:last-child, div.bbplus.bbp-struct.bbp-declaration ul > li:last-child {
+  border-bottom: none;
+}
+article.bbplus.bbp-struct.bbp-declaration ol, div.bbplus.bbp-struct.bbp-declaration ol {
+  list-style-type: lower-alpha;
+}
+article.bbplus.bbp-struct.bbp-declaration ol li ol, div.bbplus.bbp-struct.bbp-declaration ol li ol {
+  list-style-type: lower-roman;
+}
+article.bbplus.bbp-struct.bbp-declaration div.bbp-info-panel, div.bbplus.bbp-struct.bbp-declaration div.bbp-info-panel {
+  margin: 1em 0;
+  box-shadow: none;
+  border-top: 4px solid rgba(32, 80, 128, 0.8);
+}
+article.bbplus.bbp-struct.bbp-declaration:focus div.bbp-info-panel, div.bbplus.bbp-struct.bbp-declaration:focus div.bbp-info-panel {
+  display: block;
+}
+article.bbplus.bbp-struct.bbp-struct-intro, div.bbplus.bbp-struct.bbp-struct-intro {
+  background-color: #f8f8f8;
+  padding-bottom: 2em;
+  /* Need this in place of pseudo-content - ARIA */
+}
+article.bbplus.bbp-struct.bbp-struct-intro:before, div.bbplus.bbp-struct.bbp-struct-intro:before {
+  content: "Depreciated";
+  font-size: 3em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: #ec712d;
+  line-height: 1em;
+  padding-top: 3em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(236, 113, 45, 0.2) url("../img/bbplus_diagonal-noise.png");
+}
+article.bbplus.bbp-struct.bbp-struct-intro h1, div.bbplus.bbp-struct.bbp-struct-intro h1 {
+  color: #32233e;
+  margin-bottom: 1em;
+}
+article.bbplus.bbp-struct.bbp-struct-intro h1 span.subhead, div.bbplus.bbp-struct.bbp-struct-intro h1 span.subhead {
+  padding: 0 0 3em;
+  margin: 0 0 4em;
+  border-bottom: 1px solid #cccccc;
+  font-size: 0.4em;
+  background-color: #fff;
+}
+article.bbplus.bbp-struct.bbp-struct-intro h1 span.subhead:after, div.bbplus.bbp-struct.bbp-struct-intro h1 span.subhead:after {
+  position: absolute;
+  left: 50%;
+  bottom: -1em;
+  margin-left: -1em;
+  content: "\f135";
+  font-family: "FontAwesome";
+  display: block;
+  width: 1em;
+  height: 1em;
+  border-radius: 1em;
+  background-color: #32233e;
+  color: #fff;
+  font-size: 2em;
+  padding: 0.7em 0.5em 0.3em;
+}
+article.bbplus.bbp-struct.bbp-struct-intro p, div.bbplus.bbp-struct.bbp-struct-intro p {
+  line-height: 1.5em;
+  padding: 2em;
+}
+article.bbplus.bbp-struct.bbp-struct-intro > h2, div.bbplus.bbp-struct.bbp-struct-intro > h2 {
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+}
+article.bbplus.bbp-struct.bbp-struct-intro h3, div.bbplus.bbp-struct.bbp-struct-intro h3 {
+  text-transform: uppercase;
+}
+article.bbplus.bbp-struct.bbp-struct-intro ol.bbp-learning-outcomes, div.bbplus.bbp-struct.bbp-struct-intro ol.bbp-learning-outcomes {
+  width: 70%;
+  margin: 2em auto;
+  padding: 2em 4em;
+  border: 1px solid #cccccc;
+  border-radius: 0.5em;
+  background-color: white;
+  /* Need heading in place of pseudo-content - ARIA */
+  				/*&:before {
+  					display: block;
+  					content: "Learning Outcomes";
+  					font-weight: 600;
+  					text-align: center;
+  					text-transform: uppercase;
+  					letter-spacing: 0.1em;
+  					padding-bottom: 1em;
+  					}
+  
+  				}
+  				*/
+}
+article.bbplus.bbp-struct.bbp-struct-intro ol.bbp-learning-outcomes li, div.bbplus.bbp-struct.bbp-struct-intro ol.bbp-learning-outcomes li {
+  margin: 0.5em 0em 0.5em 0;
+  padding: 0.5em 1em 0.5em 1em;
+  border-bottom: 1px solid #cccccc;
+  text-align: left;
+}
+article.bbplus.bbp-struct.bbp-struct-divider, div.bbplus.bbp-struct.bbp-struct-divider {
+  border-bottom: 1px solid #cccccc;
+  text-align: center;
+  margin-bottom: 3em;
+}
+article.bbplus.bbp-struct.bbp-struct-divider:before, div.bbplus.bbp-struct.bbp-struct-divider:before {
+  content: "Depreciated";
+  font-size: 3em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: #ec712d;
+  line-height: 1em;
+  padding-top: 3em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(236, 113, 45, 0.2) url("../img/bbplus_diagonal-noise.png");
+}
+article.bbplus.bbp-struct.bbp-struct-divider h2, div.bbplus.bbp-struct.bbp-struct-divider h2 {
+  position: relative;
+  top: 3.1em;
+  display: inline-block;
+  padding: 0 0.75em;
+  background-color: #fff;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+article.bbplus.bbp-struct.bbp-struct-divider h2:before, div.bbplus.bbp-struct.bbp-struct-divider h2:before {
+  position: absolute;
+  left: 50%;
+  top: -1.75em;
+  margin-left: -1em;
+  content: "\f135";
+  font-family: "FontAwesome";
+  display: block;
+  width: 1em;
+  height: 1em;
+  border-radius: 1em;
+  color: #32233e;
+  font-size: 2em;
+  padding: 0.5em;
+}
+article.bbplus.bbp-layout, div.bbplus.bbp-layout {
+  margin: 2em 0 0;
+  /*---- Table - Default  ----*/
+  /*---- Activity - Default  ----*/
+}
+article.bbplus.bbp-layout.bbp-table table, div.bbplus.bbp-layout.bbp-table table {
+  width: 100%;
+  border-spacing: 0;
+  border-padding: 0;
+}
+article.bbplus.bbp-layout.bbp-table table tr td, div.bbplus.bbp-layout.bbp-table table tr td {
+  padding: 0.2em 0.5em;
+  border-bottom: 1px solid #ccc;
+}
+article.bbplus.bbp-layout.bbp-table table thead tr th, div.bbplus.bbp-layout.bbp-table table thead tr th {
+  padding: 0.5em 0.5em;
+  margin-bottom: 0.75em;
+  border-bottom: 1px solid #b3b3b3;
+  color: #32233e;
+}
+article.bbplus.bbp-layout.bbp-table.bbp-table-expanded table tr td, div.bbplus.bbp-layout.bbp-table.bbp-table-expanded table tr td {
+  padding: 0.6em 0.5em;
+}
+article.bbplus.bbp-layout.bbp-table.bbp-table-bordered table, div.bbplus.bbp-layout.bbp-table.bbp-table-bordered table {
+  border: 1px solid #ccc;
+  border-radius: 0.3em;
+  overflow: hidden;
+}
+article.bbplus.bbp-layout.bbp-table.bbp-table-bordered table tr td, div.bbplus.bbp-layout.bbp-table.bbp-table-bordered table tr td {
+  padding: 0.6em 0.5em;
+}
+article.bbplus.bbp-layout.bbp-table.bbp-table-bordered table tr:last-child td, div.bbplus.bbp-layout.bbp-table.bbp-table-bordered table tr:last-child td {
+  border-bottom: none;
+}
+article.bbplus.bbp-layout.bbp-table.bbp-table-bordered table thead tr th, div.bbplus.bbp-layout.bbp-table.bbp-table-bordered table thead tr th {
+  background-color: #32233e;
+  color: #fff;
+  font-weight: 400;
+}
+article.bbplus.bbp-layout.bbp-table.bbp-table-striped table tr td, div.bbplus.bbp-layout.bbp-table.bbp-table-striped table tr td {
+  padding: 0.5em;
+}
+article.bbplus.bbp-layout.bbp-table.bbp-table-striped table tr:nth-child(even) td, div.bbplus.bbp-layout.bbp-table.bbp-table-striped table tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
+article.bbplus.bbp-layout.bbp-activity, div.bbplus.bbp-layout.bbp-activity {
+  padding: 2em 2em 2em 4em;
+  border-top: 1px solid #81bde3;
+  border-bottom: 1px solid #81bde3;
+  /*---- Activity - Read  ----*/
+  /*---- Activity - Watch  ----*/
+  /*---- Activity - Apply  ----*/
+  /*---- Activity - Discuss  ----*/
+  /*---- Activity - Module  ----*/
+  /*---- Activity - Group  ----*/
+  /*---- Activity - Lecture Notes  ----*/
+  /*---- Activity - Lab  ----*/
+  /*---- Activity - Quiz  ----*/
+  /*---- Activity - Recap  ----*/
+}
+article.bbplus.bbp-layout.bbp-activity h4, div.bbplus.bbp-layout.bbp-activity h4 {
+  margin: 0;
+  color: #1b577d;
+}
+article.bbplus.bbp-layout.bbp-activity h4 > span:nth-of-type(1), div.bbplus.bbp-layout.bbp-activity h4 > span:nth-of-type(1) {
+  display: block;
+  text-transform: uppercase;
+  padding: 0.25em 0;
+  margin-bottom: 1em;
+  font-size: 0.9em;
+  letter-spacing: 0.1em;
+  color: #2e91d0;
+}
+article.bbplus.bbp-layout.bbp-activity:before, div.bbplus.bbp-layout.bbp-activity:before {
+  position: absolute;
+  left: 1.5em;
+  top: -0.5em;
+  margin-left: -1em;
+  content: "\f085";
+  font-family: "FontAwesome";
+  display: block;
+  width: 1.4em;
+  height: 1.4em;
+  color: #57a7da;
+  font-size: 1.5em;
+  padding: 2em 0.25em 0em;
+  text-align: center;
+  display: inline-block;
+}
+article.bbplus.bbp-layout.bbp-activity.bbp-act-read:before, div.bbplus.bbp-layout.bbp-activity.bbp-act-read:before {
+  content: "\f02d";
+}
+article.bbplus.bbp-layout.bbp-activity.bbp-act-watch:before, div.bbplus.bbp-layout.bbp-activity.bbp-act-watch:before {
+  content: "\f04b";
+}
+article.bbplus.bbp-layout.bbp-activity.bbp-act-apply:before, div.bbplus.bbp-layout.bbp-activity.bbp-act-apply:before {
+  content: "\f00c";
+}
+article.bbplus.bbp-layout.bbp-activity.bbp-act-discuss:before, div.bbplus.bbp-layout.bbp-activity.bbp-act-discuss:before {
+  content: "\f086";
+}
+article.bbplus.bbp-layout.bbp-activity.bbp-act-module:before, div.bbplus.bbp-layout.bbp-activity.bbp-act-module:before {
+  content: "\f0e8";
+}
+article.bbplus.bbp-layout.bbp-activity.bbp-act-group:before, div.bbplus.bbp-layout.bbp-activity.bbp-act-group:before {
+  content: "\f0c0";
+}
+article.bbplus.bbp-layout.bbp-activity.bbp-act-lecturenotes:before, div.bbplus.bbp-layout.bbp-activity.bbp-act-lecturenotes:before {
+  content: "\f022";
+}
+article.bbplus.bbp-layout.bbp-activity.bbp-act-lab:before, div.bbplus.bbp-layout.bbp-activity.bbp-act-lab:before {
+  content: "\f0c3";
+}
+article.bbplus.bbp-layout.bbp-activity.bbp-act-quiz:before, div.bbplus.bbp-layout.bbp-activity.bbp-act-quiz:before {
+  content: "\f128";
+}
+article.bbplus.bbp-layout.bbp-activity.bbp-act-recap:before, div.bbplus.bbp-layout.bbp-activity.bbp-act-recap:before {
+  content: "\f021";
+}
+article.bbplus.bbp-layout.bbp-resource, div.bbplus.bbp-layout.bbp-resource {
+  padding: 2em 2em 2em 4em;
+  background: url("../img/bbplus_diagonal-noise.png"), center no-repeat scroll;
+  border: 1px dashed #81c9e3;
+  /*---- Resource - Lecture Notes  ----*/
+  /*---- Resource - Files  ----*/
+}
+article.bbplus.bbp-layout.bbp-resource h4, div.bbplus.bbp-layout.bbp-resource h4 {
+  margin: 0;
+  color: #1b637d;
+}
+article.bbplus.bbp-layout.bbp-resource h4 > span:nth-of-type(1), div.bbplus.bbp-layout.bbp-resource h4 > span:nth-of-type(1) {
+  display: block;
+  text-transform: uppercase;
+  padding: 0.25em 0;
+  margin-bottom: 1em;
+  font-size: 0.9em;
+  letter-spacing: 0.1em;
+  color: #2ea5d0;
+}
+article.bbplus.bbp-layout.bbp-resource:before, div.bbplus.bbp-layout.bbp-resource:before {
+  position: absolute;
+  left: 1.5em;
+  top: -0.5em;
+  margin-left: -1em;
+  content: "\f16c";
+  font-family: "FontAwesome";
+  display: block;
+  width: 1.4em;
+  height: 1.4em;
+  color: #57b7da;
+  font-size: 1.5em;
+  padding: 2em 0.25em 0em;
+  text-align: center;
+  display: inline-block;
+}
+article.bbplus.bbp-layout.bbp-resource.bbp-res-lnotes:before, div.bbplus.bbp-layout.bbp-resource.bbp-res-lnotes:before {
+  content: "\f022";
+}
+article.bbplus.bbp-layout.bbp-resource.bbp-res-files:before, div.bbplus.bbp-layout.bbp-resource.bbp-res-files:before {
+  content: "\F15B";
+}
+article.bbplus.bbp-layout.bbp-info-panel, div.bbplus.bbp-layout.bbp-info-panel {
+  margin: 2em 2em 0;
+  padding: 1em 2em 2em;
+  background-color: #f1f1f1;
+  border: 1px solid #d8d8d8;
+  border-top: 4px solid #bebebe;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+article.bbplus.bbp-layout.bbp-info-panel:after, div.bbplus.bbp-layout.bbp-info-panel:after {
+  position: absolute;
+  right: 1em;
+  top: 2.5em;
+  content: "\f129";
+  font-family: "FontAwesome";
+  display: block;
+  width: 1.4em;
+  height: 1.4em;
+  border-radius: 1.5em;
+  background-color: #bebebe;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25);
+  color: #f1f1f1;
+  font-size: 1.25em;
+  padding: 0.5em 0.25em 0em;
+  text-align: center;
+  display: inline-block;
+}
+article.bbplus.bbp-layout.bbp-info-panel h4, div.bbplus.bbp-layout.bbp-info-panel h4 {
+  padding: 0 2.5em 0.75em 0;
+  border-bottom: 1px solid #bebebe;
+  /*>span {
+  	display: none; //OLD - hides 'underline' option in WYSYIG editor too
+  	}*/
+}
+article.bbplus.bbp-layout.bbp-info-panel p, div.bbplus.bbp-layout.bbp-info-panel p {
+  padding-right: 3em;
+}
+article.bbplus.bbp-layout.bbp-info-panel.bbp-info-tip, div.bbplus.bbp-layout.bbp-info-panel.bbp-info-tip {
+  background: linear-gradient(180deg, #efda94, #e8cb68), center no-repeat scroll;
+  border: 1px solid #e1bc3c;
+  border-top: 4px solid #cba41f;
+  color: #5c4b0e;
+}
+article.bbplus.bbp-layout.bbp-info-panel.bbp-info-tip:after, div.bbplus.bbp-layout.bbp-info-panel.bbp-info-tip:after {
+  content: "\f0eb";
+  background-color: #cba41f;
+  color: #e8cb68;
+}
+article.bbplus.bbp-layout.bbp-info-panel.bbp-info-tip h4, div.bbplus.bbp-layout.bbp-info-panel.bbp-info-tip h4 {
+  color: #735d11;
+  border-bottom: 1px solid #cba41f;
+}
+article.bbplus.bbp-layout.bbp-info-panel.bbp-info-key, div.bbplus.bbp-layout.bbp-info-panel.bbp-info-key {
+  background: linear-gradient(180deg, #add592, #91c76d), center no-repeat scroll;
+  border: 1px solid #75b948;
+  border-top: 4px solid #5e9539;
+  color: #243916;
+}
+article.bbplus.bbp-layout.bbp-info-panel.bbp-info-key:after, div.bbplus.bbp-layout.bbp-info-panel.bbp-info-key:after {
+  content: "\f084";
+  background-color: #5e9539;
+  color: #91c76d;
+}
+article.bbplus.bbp-layout.bbp-info-panel.bbp-info-key h4, div.bbplus.bbp-layout.bbp-info-panel.bbp-info-key h4 {
+  color: #2f4b1d;
+  border-bottom: 1px solid #5e9539;
+}
+article.bbplus.bbp-layout.bbp-info-panel.bbp-info-warning, div.bbplus.bbp-layout.bbp-info-panel.bbp-info-warning {
+  background: linear-gradient(180deg, #efa17b, #ea814d), center no-repeat scroll;
+  border: 1px solid #e5611f;
+  border-top: 4px solid #bb4d16;
+  color: #491e09;
+}
+article.bbplus.bbp-layout.bbp-info-panel.bbp-info-warning:after, div.bbplus.bbp-layout.bbp-info-panel.bbp-info-warning:after {
+  content: "\f071";
+  background-color: #bb4d16;
+  color: #ea814d;
+}
+article.bbplus.bbp-layout.bbp-info-panel.bbp-info-warning h4, div.bbplus.bbp-layout.bbp-info-panel.bbp-info-warning h4 {
+  color: #60270b;
+  border-bottom: 1px solid #bb4d16;
+}
+article.bbplus.bbp-layout.bbp-image-panel:after, div.bbplus.bbp-layout.bbp-image-panel:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+article.bbplus.bbp-layout.bbp-image-panel h4, div.bbplus.bbp-layout.bbp-image-panel h4 {
+  margin-top: 0;
+}
+article.bbplus.bbp-layout.bbp-image-panel img, article.bbplus.bbp-layout.bbp-image-panel object, div.bbplus.bbp-layout.bbp-image-panel img, div.bbplus.bbp-layout.bbp-image-panel object {
+  height: auto;
+  float: left;
+  margin: 0 1em 0.5em 0;
+}
+article.bbplus.bbp-layout.bbp-image-panel.bbp-image-panel-bordered, div.bbplus.bbp-layout.bbp-image-panel.bbp-image-panel-bordered {
+  padding: 1em;
+  border: 1px solid #bebebe;
+}
+article.bbplus.bbp-layout.bbp-image-panel.bbp-image-panel-bordered h4, div.bbplus.bbp-layout.bbp-image-panel.bbp-image-panel-bordered h4 {
+  margin-top: 1em;
+}
+article.bbplus.bbp-layout.bbp-image-panel.bbp-image-panel-right img, article.bbplus.bbp-layout.bbp-image-panel.bbp-image-panel-right object, div.bbplus.bbp-layout.bbp-image-panel.bbp-image-panel-right img, div.bbplus.bbp-layout.bbp-image-panel.bbp-image-panel-right object {
+  float: right;
+  margin: 0 0 0.5em 1em;
+}
+article.bbplus.bbp-layout.bbp-copyright, div.bbplus.bbp-layout.bbp-copyright {
+  background-color: #f1f1f1;
+  margin: 1em 0;
+  padding: 1em 2em;
+  max-width: 80%;
+}
+article.bbplus.bbp-layout.bbp-copyright:after, div.bbplus.bbp-layout.bbp-copyright:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+article.bbplus.bbp-layout.bbp-copyright h5, div.bbplus.bbp-layout.bbp-copyright h5 {
+  font-size: 1em;
+}
+article.bbplus.bbp-layout.bbp-copyright p, div.bbplus.bbp-layout.bbp-copyright p {
+  font-size: 0.8em;
+  line-height: 1.1em;
+}
+article.bbplus.bbp-system, div.bbplus.bbp-system {
+  margin: 1em 1.5em;
+}
+article.bbplus.bbp-system.bbp-annotation-panel, div.bbplus.bbp-system.bbp-annotation-panel {
+  position: absolute;
+  width: 20em;
+  right: -13em;
+  margin: 0;
+  padding: 0 0 2em 0;
+  background: linear-gradient(90deg, #9b92a2 30%, #81768b 100%), center no-repeat scroll;
+  font-size: 0.9em;
+  font-weight: 600;
+  text-align: left;
+  float: left;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  z-index: 10000;
+  color: #fff;
+}
+article.bbplus.bbp-system.bbp-annotation-panel h3, div.bbplus.bbp-system.bbp-annotation-panel h3 {
+  font-weight: 300;
+  padding: 1rem 3rem 1rem 2rem;
+  margin: 0 0 1em 0;
+  color: #1b181d;
+  border-bottom: 1px solid #685e70;
+}
+article.bbplus.bbp-system.bbp-annotation-panel h3:after, div.bbplus.bbp-system.bbp-annotation-panel h3:after {
+  position: absolute;
+  right: 0.6em;
+  top: 0.2em;
+  font-family: "FontAwesome";
+  display: block;
+  width: 1em;
+  height: 1em;
+  color: #fff;
+  font-size: 1.25em;
+  padding: 0.5em 0.25em 0em;
+  text-align: center;
+  display: inline-block;
+}
+article.bbplus.bbp-system.bbp-annotation-panel h3.bbp-annotation-organisation:after, div.bbplus.bbp-system.bbp-annotation-panel h3.bbp-annotation-organisation:after {
+  content: "\f00a";
+}
+article.bbplus.bbp-system.bbp-annotation-panel h3.bbp-annotation-course-structure:after, div.bbplus.bbp-system.bbp-annotation-panel h3.bbp-annotation-course-structure:after {
+  content: "\f0e8";
+}
+article.bbplus.bbp-system.bbp-annotation-panel h3.bbp-annotation-learning-content:after, div.bbplus.bbp-system.bbp-annotation-panel h3.bbp-annotation-learning-content:after {
+  content: "\f0f6";
+}
+article.bbplus.bbp-system.bbp-annotation-panel h3.bbp-annotation-collaboration:after, div.bbplus.bbp-system.bbp-annotation-panel h3.bbp-annotation-collaboration:after {
+  content: "\f0e6";
+}
+article.bbplus.bbp-system.bbp-annotation-panel h3.bbp-annotation-assessment:after, div.bbplus.bbp-system.bbp-annotation-panel h3.bbp-annotation-assessment:after {
+  content: "\f087";
+}
+article.bbplus.bbp-system.bbp-annotation-panel h4, div.bbplus.bbp-system.bbp-annotation-panel h4 {
+  margin: 0;
+  padding: 0.5rem 2rem;
+}
+article.bbplus.bbp-system.bbp-annotation-panel p, div.bbplus.bbp-system.bbp-annotation-panel p {
+  font-weight: 300;
+  margin: 0;
+  padding: 0.5rem 2rem;
+}
+article.bbplus.bbp-system.bbp-annotation-panel:after, div.bbplus.bbp-system.bbp-annotation-panel:after {
+  position: absolute;
+  left: -1.1em;
+  top: 0.8em;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 1.2em solid transparent;
+  border-bottom: 1.2em solid transparent;
+  border-right: 1.2em solid #9b92a2;
+}
+article.bbplus.bbp-system.bbp-annotation-panel.bbp-annotation-structuring, div.bbplus.bbp-system.bbp-annotation-panel.bbp-annotation-structuring {
+  background: linear-gradient(90deg, #d35069 30%, #d8647a 100%), center no-repeat scroll;
+}
+article.bbplus.bbp-system.bbp-annotation-panel.bbp-annotation-structuring:after, div.bbplus.bbp-system.bbp-annotation-panel.bbp-annotation-structuring:after {
+  border-right-color: #d35069;
+}
+article.bbplus.bbp-system.bbp-annotation-panel.bbp-annotation-structuring h3, div.bbplus.bbp-system.bbp-annotation-panel.bbp-annotation-structuring h3 {
+  background-color: #d35069;
+  border-bottom: 1px solid #dd798c;
+  color: #fff;
+}
+article.bbplus.bbp-system.bbp-annotation-panel.bbp-annotation-engaging, div.bbplus.bbp-system.bbp-annotation-panel.bbp-annotation-engaging {
+  background: linear-gradient(90deg, #f7555d 30%, #f86d74 100%), center no-repeat scroll;
+}
+article.bbplus.bbp-system.bbp-annotation-panel.bbp-annotation-engaging:after, div.bbplus.bbp-system.bbp-annotation-panel.bbp-annotation-engaging:after {
+  border-right-color: #f7555d;
+}
+article.bbplus.bbp-system.bbp-annotation-panel.bbp-annotation-engaging h3, div.bbplus.bbp-system.bbp-annotation-panel.bbp-annotation-engaging h3 {
+  background-color: #f7555d;
+  border-bottom: 1px solid #f9868b;
+  color: #fff;
+}
+article.bbplus.bbp-system.bbp-tooltip, div.bbplus.bbp-system.bbp-tooltip {
+  position: absolute;
+  width: 20em;
+  right: -20em;
+  margin: 0;
+  padding: 2em;
+  border-top: 4px solid #4290cc;
+  background: linear-gradient(90deg, #bad7ed 30%, #92bfe2 100%), center no-repeat scroll;
+  font-size: 0.9em;
+  font-weight: 600;
+  text-align: left;
+  float: left;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  z-index: 10000;
+  color: #4290cc;
+}
+article.bbplus.bbp-system.bbp-tooltip h3, div.bbplus.bbp-system.bbp-tooltip h3 {
+  padding: 0.5em 0;
+  margin: 2em 0 1em;
+  color: #245a84;
+  border-bottom: 1px solid #6aa8d7;
+}
+article.bbplus.bbp-system.bbp-tooltip h3:after, div.bbplus.bbp-system.bbp-tooltip h3:after {
+  position: absolute;
+  left: 1em;
+  top: 0.5em;
+  content: "\f129";
+  font-family: "FontAwesome";
+  display: block;
+  width: 1em;
+  height: 1em;
+  border-radius: 1.5em;
+  background-color: #2f76ac;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25);
+  color: #4290cc;
+  font-size: 1.25em;
+  padding: 0.5em 0.25em 0em;
+  text-align: center;
+  display: inline-block;
+}
+article.bbplus.bbp-system.bbp-tooltip p, div.bbplus.bbp-system.bbp-tooltip p {
+  font-weight: 300;
+}
+article.bbplus.bbp-system.bbp-tooltip:before, div.bbplus.bbp-system.bbp-tooltip:before {
+  position: absolute;
+  left: 4em;
+  top: 1.1em;
+  content: "Bb+ Help";
+  display: inline-block;
+  font-size: 1.25em;
+  color: #4290cc;
+}
+article.bbplus.bbp-system.bbp-tooltip:after, div.bbplus.bbp-system.bbp-tooltip:after {
+  position: absolute;
+  left: -1.1em;
+  top: 1em;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 1.2em solid transparent;
+  border-bottom: 1.2em solid transparent;
+  border-right: 1.2em solid #bad7ed;
+}
