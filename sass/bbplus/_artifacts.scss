@@ -1,0 +1,841 @@
+article.bbplus, div.bbplus {
+	line-height: $bbplus-base-font-size / 10 + em;
+	display: block;
+	position: relative;
+	font-size: $bbplus-base-font-size + px;
+	font-weight: 300;
+	//line-height: 1.2em;
+	color: $bbplus-body-color;
+
+	/* Some normalise styles from normalize.css v3.0.2 | MIT License | git.io/normalize */
+	-ms-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%;
+	div { display: block; }
+	video{ display:inline-block;vertical-align:baseline; }
+	a{background-color:transparent}
+	a:active,a:hover{outline:0}
+	mark{background:#ff0;color:#000}small{font-size:80%}
+	sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+	sup{top:-.5em}sub{bottom:-.25em}
+	img{border:0}svg:not(:root){overflow:hidden}
+	figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+	pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}
+	table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+	/* Normalise margin/padding */
+	div, p, h1, h2, h3, h4, h5, h6 {
+		margin: 0;
+		padding: 0;
+	}
+
+	h1,h2,h3 {
+		font-weight: 500;
+		margin: 1.5em 0 0.5em;
+		color: $bbplus-heading-color;
+	}
+	h4,h5,h6 {
+		font-weight: 600;
+		margin: 1em 0 0.5em;
+	}
+	h1 { font-size: 2.5em;}
+	h2 { font-size: 2em;}
+	h3 { font-size: 1.34em;}
+	h4, h5, h6 { font-size: 1.1em;}
+	p {
+		margin: 1em 0;
+	}
+	ul, ol {
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		li {
+			padding: 0.25em 0;
+		}
+	}
+	ul {
+		list-style-type: disc;
+	}
+	a {
+		color: $bbplus-link-color;
+	}
+
+	span.subhead {
+		position: relative;
+		display: block;
+		padding: 1em 0;
+		margin: 1em 0 2em;
+		border-bottom: 1px solid $bbplus-divider-line;
+		font-size: 0.5em;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		background-color: $bbplus-white;		
+	}
+
+	header {
+		text-align: center;
+		h2 {
+			font-size: 36px;
+		}
+	}
+	/* Content Structures */
+	&.bbp-struct {
+		text-align: center;
+		margin: 2em 0 2em;
+		p, ul, ol {
+			color: $bbplus-body-color;
+			text-align: left;
+		}	
+
+		/* Intro panel for Topic/Module/Week */
+
+		&.bbp-struct-learning-outcomes {
+			margin: 0;
+			padding: 1em 0;
+			background-color: $bbplus-struct-bg-color;
+			h4 {
+				border-bottom: 1px solid $bbplus-divider-line;
+				background-color: $bbplus-white;
+				padding: 2em;
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+			}
+			p {
+				padding: 1em 2em;
+			}
+			ol {
+				width: 70%;
+				margin: 1em auto;
+				padding: 1em 4em;
+				//border: 1px solid $bbplus-divider-line;
+				//border-radius: 0.5em;
+				//background-color: lighten($bbplus-struct-bg-color,10%);
+				li {
+					margin: 0.5em 0em 0.5em 0;
+					padding: 0.5em 1em 0.5em 1em;
+					border-bottom: 1px solid $bbplus-divider-line;
+					text-align: left;
+				}
+			}
+		}
+		&.bbp-declaration {
+			margin: 2em 1em;
+			padding: 2em 4em 3em;
+			border-top: 4px solid $bbplus-usc-corporate-blue;
+			background: url($bbplus-image-path + "bbplus_grid_noise.png"), 
+			linear-gradient(180deg, lighten($bbplus-declaration-color,20%), lighten($bbplus-declaration-color,15%)), center no-repeat #e1f2f1 scroll;
+			box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+			color: rgba($bbplus-declaration-text-color,0.9);
+			&:before {
+				content: "";
+				background: url($bbplus-image-path + "bbplus_declaration_usc_watermark.png") no-repeat;
+				display: block;
+				width: 10em;
+				height: 5em;
+				position: absolute;
+				top: 5em;
+				left: 50%;
+				margin-left: -5em;
+			}
+			h3 {
+				margin: 8em 0 4em;
+				color: rgba($bbplus-usc-corporate-blue,0.8);
+				text-transform: uppercase;
+				letter-spacing: 0.2em;
+			}
+			h4 {
+				color: rgba($bbplus-usc-corporate-blue,0.8);
+			}
+			div#usc-ack {
+				margin: 3em 0 0;
+				a {
+					padding: 2em 3em;
+					display: block;
+					color: #fff;
+					background-color: darken($bbplus-declaration-color, 10%);
+					text-transform: uppercase;
+					&:hover {
+						background-color: darken($bbplus-declaration-color, 20%);
+					}
+				}
+			}
+			//Declaration main items
+			ul {
+				margin: 1em 0;
+				list-style-type: upper-roman;
+				border-top: 1px solid rgba($bbplus-declaration-color,0.8);
+				border-bottom: 1px solid rgba($bbplus-declaration-color,0.8);
+				> li {
+					margin: 0 1em;
+					padding: 1em 2em 1em 1em;
+					border-bottom: 1px solid $bbplus-declaration-color;
+					color: rgba($bbplus-declaration-text-color,0.9);
+					&:last-child {
+						border-bottom: none;
+					}
+				}
+			}
+			//Declaration definition items
+			ol {
+				list-style-type: lower-alpha;
+				li {
+					ol {
+						list-style-type: lower-roman;
+					}
+				}
+			}
+			div.bbp-info-panel {
+				margin: 1em 0;
+				box-shadow: none;
+				//display: none;
+				border-top: 4px solid rgba($bbplus-usc-corporate-blue,0.8);
+			}
+			&:focus {
+				div.bbp-info-panel {
+					display: block;
+				}
+			}
+		}
+
+		&.bbp-struct-intro { ////DEPRECIATED !!!!!!!!!!!!!!!!!!
+			background-color: $bbplus-struct-bg-color;
+			padding-bottom: 2em;
+			@include bbplus_depreciated;
+			h1 {
+				color: $bbplus-heading-color;
+				margin-bottom: 1em;
+				span.subhead {
+
+					padding: 0 0 3em;
+					margin: 0 0 4em;
+					border-bottom: 1px solid $bbplus-divider-line;
+					font-size: 0.4em;
+					background-color: $bbplus-white;
+					&:after {
+						position: absolute;
+						left: 50%;
+						bottom: -1em;
+						margin-left: -1em;
+						content: "\f135";
+						font-family: "FontAwesome";
+						display: block;
+						width: 1em;
+						height: 1em;
+						border-radius: 1em;
+						background-color: $bbplus-heading-color;
+						color: $bbplus-white;
+						font-size: 2em;
+						padding: 0.7em 0.5em 0.3em;
+					}
+				}
+			}
+			p {
+				line-height: 1.5em;
+				padding: 2em;
+			}
+			/* Need this in place of pseudo-content - ARIA */
+			> h2 {
+				text-transform: uppercase;
+				font-size: 1em;
+				letter-spacing: 0.1em;
+			}
+			h3 {
+				text-transform: uppercase;
+			}
+			ol.bbp-learning-outcomes {
+				width: 70%;
+				margin: 2em auto;
+				padding: 2em 4em;
+				border: 1px solid $bbplus-divider-line;
+				border-radius: 0.5em;
+				background-color: lighten($bbplus-struct-bg-color,10%);
+				li {
+					margin: 0.5em 0em 0.5em 0;
+					padding: 0.5em 1em 0.5em 1em;
+					border-bottom: 1px solid $bbplus-divider-line;
+					text-align: left;
+				}
+				/* Need heading in place of pseudo-content - ARIA */
+				/*&:before {
+					display: block;
+					content: "Learning Outcomes";
+					font-weight: 600;
+					text-align: center;
+					text-transform: uppercase;
+					letter-spacing: 0.1em;
+					padding-bottom: 1em;
+					}
+
+				}
+				*/
+			}
+		}
+		&.bbp-struct-divider {
+			border-bottom: 1px solid $bbplus-divider-line;
+			text-align: center;
+			margin-bottom: 3em;
+			@include bbplus_depreciated;
+			h2 {
+				position: relative;
+				top: 3.1em;
+				display: inline-block;
+				padding: 0 0.75em;
+				background-color: $bbplus-white;
+				font-size: 1em;
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+				&:before {
+					position: absolute;
+					left: 50%;
+					top: -1.75em;
+					margin-left: -1em;
+					content: "\f135";
+					font-family: "FontAwesome";
+					display: block;
+					width: 1em;
+					height: 1em;
+					border-radius: 1em;
+					color: $bbplus-heading-color;
+					font-size: 2em;
+					padding: 0.5em;
+				}
+			}
+		}
+	}
+
+
+	/* Content Layouts */
+	&.bbp-layout {
+		margin: 2em 0 0;
+		/*---- Table - Default  ----*/
+		&.bbp-table {
+			table {
+				width: 100%;
+				border-spacing: 0;
+				border-padding: 0;
+				tr {
+					td{
+						padding: 0.2em 0.5em;
+						border-bottom: 1px solid $bbplus-table-line;
+					}
+				}
+				thead {
+					tr {
+						th {
+							padding: 0.5em 0.5em;
+							margin-bottom: 0.75em;
+							border-bottom: 1px solid darken($bbplus-table-line, 10%);
+							color: $bbplus-heading-color;
+						}
+					}
+				}
+			}
+			&.bbp-table-expanded {
+				table {
+					tr {
+						td {
+							padding: 0.6em 0.5em;
+						}
+					}
+				}
+			}
+			&.bbp-table-bordered {
+				table {
+					border: 1px solid $bbplus-table-line;
+					border-radius: 0.3em;
+					overflow: hidden;
+					tr {
+						td {
+							padding: 0.6em 0.5em;
+						}
+						&:last-child {
+							td {
+								border-bottom: none;
+							}
+						}
+					}
+					thead {
+						tr {
+							th {
+								background-color: $bbplus-heading-color;
+								color: #fff;
+								font-weight: 400;
+							}
+						}
+					}
+				}
+			}
+			&.bbp-table-striped {
+				table {
+					
+					tr {
+						td {
+							padding: 0.5em;
+						}
+						&:nth-child(even) {
+							td {
+								background-color: lighten($bbplus-table-line, 15%);
+							}
+						}
+					}
+				}
+			}
+		}
+
+		/*---- Activity - Default  ----*/
+		&.bbp-activity {
+			padding: 2em 2em 2em 4em;
+			//background: url($bbplus-image-path + "bbplus_diagonal-noise.png"), linear-gradient(180deg, lighten($bbplus-activity-color,20%), lighten($bbplus-activity-color,15%)), center no-repeat #e1f2f1 scroll;
+			border-top: 1px solid lighten($bbplus-activity-color, 10%);
+			border-bottom: 1px solid lighten($bbplus-activity-color, 10%);
+			//box-shadow: rgba($bbplus-black,0.25) 0.1em 0.1em 0.2em;
+			//overflow: hidden;
+			h4 {
+				margin: 0;
+				color: darken($bbplus-activity-color,30%);
+				> span {
+					//First child span of h4 only 
+					&:nth-of-type(1) {
+						display: block;
+						text-transform: uppercase;
+						padding: 0.25em 0;
+						margin-bottom: 1em;
+						font-size: 0.9em;
+						letter-spacing: 0.1em;
+						color: darken($bbplus-activity-color, 10%);
+					}
+				}
+			}
+			&:before {
+				position: absolute;
+				left: 1.5em;
+				top: -0.5em;
+				margin-left: -1em;
+				content: "\f085";
+				font-family: "FontAwesome";
+				display: block;
+				width: 1.4em;
+				height: 1.4em;
+				color: $bbplus-activity-color;
+				font-size: 1.5em;
+				padding: 2em 0.25em 0em;
+				text-align: center;
+				display: inline-block;
+			}
+			/*---- Activity - Read  ----*/
+			&.bbp-act-read {
+				&:before {
+					content: "\f02d";
+				}
+
+			}
+			/*---- Activity - Watch  ----*/
+			&.bbp-act-watch {
+				&:before {
+					content: "\f04b";
+				}
+			}
+			/*---- Activity - Apply  ----*/
+			&.bbp-act-apply {
+				&:before {
+					content: "\f00c";
+				}
+			}
+			/*---- Activity - Discuss  ----*/
+			&.bbp-act-discuss {
+				&:before {
+					content: "\f086";
+				}
+			}
+			/*---- Activity - Module  ----*/
+			&.bbp-act-module {
+				&:before {
+					content: "\f0e8";
+				}
+			}
+			/*---- Activity - Group  ----*/
+			&.bbp-act-group {
+				&:before {
+					content: "\f0c0";
+				}
+			}
+			/*---- Activity - Lecture Notes  ----*/	
+			&.bbp-act-lecturenotes {
+				&:before {
+					content: "\f022";
+				}
+			}			
+			/*---- Activity - Lab  ----*/
+			&.bbp-act-lab {
+				&:before {
+					content: "\f0c3";
+				}
+			}
+			/*---- Activity - Quiz  ----*/
+			&.bbp-act-quiz {
+				&:before {
+					content: "\f128";
+				}
+			}	
+			/*---- Activity - Recap  ----*/
+			&.bbp-act-recap {
+				&:before {
+					content: "\f021";
+				}
+			}														
+
+		}
+		&.bbp-resource {
+			padding: 2em 2em 2em 4em;
+			background: url($bbplus-image-path + "bbplus_diagonal-noise.png"), center no-repeat scroll;
+			border: 1px dashed lighten($bbplus-resource-color, 10%);
+			//border-bottom: 1px solid lighten($bbplus-resource-color, 10%);
+			//box-shadow: rgba($bbplus-black,0.25) 0.1em 0.1em 0.2em;
+			//overflow: hidden;
+			h4 {
+				margin: 0;
+				color: darken($bbplus-resource-color,30%);
+				> span {
+					//First child span of h4 only 
+					&:nth-of-type(1) {
+						display: block;
+						text-transform: uppercase;
+						padding: 0.25em 0;
+						margin-bottom: 1em;
+						font-size: 0.9em;
+						letter-spacing: 0.1em;
+						color: darken($bbplus-resource-color, 10%);
+					}
+				}
+			}
+			&:before {
+				position: absolute;
+				left: 1.5em;
+				top: -0.5em;
+				margin-left: -1em;
+				content: "\f16c";
+				font-family: "FontAwesome";
+				display: block;
+				width: 1.4em;
+				height: 1.4em;
+				color: $bbplus-resource-color;
+				font-size: 1.5em;
+				padding: 2em 0.25em 0em;
+				text-align: center;
+				display: inline-block;
+			}/*---- Resource - Lecture Notes  ----*/
+			&.bbp-res-lnotes {
+				&:before {
+					content: "\f022";
+				}
+			}
+			/*---- Resource - Files  ----*/
+			&.bbp-res-files {
+				&:before {
+					content: "\F15B";
+				}
+			}
+		}
+		&.bbp-info-panel {			
+			margin: 2em 2em 0;
+			padding: 1em 2em 2em;
+			background-color: $bbplus-info-panel-default-color;
+			border: 1px solid darken($bbplus-info-panel-default-color, 10%);
+			border-top: 4px solid darken($bbplus-info-panel-default-color, 20%);
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+			&:after {
+				position: absolute;
+				right: 1em;
+				top: 2.5em;
+				content: "\f129";
+				font-family: "FontAwesome";
+				display: block;
+				width: 1.4em;
+				height: 1.4em;
+				border-radius: 1.5em;
+				background-color: darken($bbplus-info-panel-default-color, 20%);
+				box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25);
+				color: $bbplus-info-panel-default-color;
+				font-size: 1.25em;
+				padding: 0.5em 0.25em 0em;
+				text-align: center;
+				display: inline-block;
+			}
+			h4 {
+				padding: 0 2.5em 0.75em 0;
+				border-bottom: 1px solid darken($bbplus-info-panel-default-color, 20%);
+				/*>span {
+					display: none; //OLD - hides 'underline' option in WYSYIG editor too
+					}*/
+				}
+				p {
+					padding-right: 3em;
+				}
+			&.bbp-info-tip {
+				//background-color: $bbplus-info-panel-tip-color;
+				background: linear-gradient(180deg, lighten($bbplus-info-panel-tip-color,10%), $bbplus-info-panel-tip-color), center no-repeat scroll;
+				border: 1px solid darken($bbplus-info-panel-tip-color, 10%);
+				border-top: 4px solid darken($bbplus-info-panel-tip-color, 20%);
+				color: darken($bbplus-info-panel-tip-color,45%);
+				&:after {
+					content: "\f0eb";
+					background-color: darken($bbplus-info-panel-tip-color, 20%);
+					color: $bbplus-info-panel-tip-color;
+				}
+				h4 {
+					color: darken($bbplus-info-panel-tip-color,40%);
+					border-bottom: 1px solid darken($bbplus-info-panel-tip-color, 20%);			
+				}
+			}
+			&.bbp-info-key {
+				//background-color: $bbplus-info-panel-key-color;
+				background: linear-gradient(180deg, lighten($bbplus-info-panel-key-color,10%), $bbplus-info-panel-key-color), center no-repeat scroll;
+				border: 1px solid darken($bbplus-info-panel-key-color, 10%);
+				border-top: 4px solid darken($bbplus-info-panel-key-color, 20%);
+				color: darken($bbplus-info-panel-key-color,45%);
+				&:after {
+					content: "\f084";
+					background-color: darken($bbplus-info-panel-key-color, 20%);
+					color: $bbplus-info-panel-key-color;
+				}
+				h4 {
+					color: darken($bbplus-info-panel-key-color,40%);
+					border-bottom: 1px solid darken($bbplus-info-panel-key-color, 20%);
+				}
+			}
+			&.bbp-info-warning {
+				//background-color: $bbplus-info-panel-warning-color;
+				background: linear-gradient(180deg, lighten($bbplus-info-panel-warning-color,10%), $bbplus-info-panel-warning-color), center no-repeat scroll;
+				border: 1px solid darken($bbplus-info-panel-warning-color, 10%);
+				border-top: 4px solid darken($bbplus-info-panel-warning-color, 20%);
+				color: darken($bbplus-info-panel-warning-color,45%);
+				&:after {
+					content: "\f071";
+					background-color: darken($bbplus-info-panel-warning-color, 20%);
+					color: $bbplus-info-panel-warning-color;
+				}
+				h4 {
+					color: darken($bbplus-info-panel-warning-color,40%);
+					border-bottom: 1px solid darken($bbplus-info-panel-warning-color, 20%);	
+				}
+			}
+		}
+
+		&.bbp-image-panel {
+			@include clearfix;
+			h4 {
+				margin-top: 0;
+			}
+			img, object {
+				height: auto;
+				float: left;
+				margin: 0 1em 0.5em 0;
+			}
+			&.bbp-image-panel-bordered {
+				padding: 1em;
+				border: 1px solid darken($bbplus-info-panel-default-color, 20%);
+				h4 {
+					margin-top: 1em;
+				}
+			}
+			&.bbp-image-panel-right {
+				img, object {
+					float: right;
+					margin: 0 0 0.5em 1em;
+				}
+			} 
+		}
+		&.bbp-copyright {
+			@include clearfix;
+			background-color: $bbplus-info-panel-default-color;
+			margin: 1em 0;
+			padding: 1em 2em;
+			max-width: 80%;
+			h5 {
+				font-size: 1em;
+			}
+			p {
+				font-size: 0.8em;
+				line-height: 1.1em;
+			}
+		}
+	}
+	
+	&.bbp-system {
+		margin: 1em 1.5em;
+		&.bbp-annotation-panel {
+			position: absolute;
+			width: 20em;
+			right: -13em;
+			margin: 0;
+			padding: 0 0 2em 0;
+			background: linear-gradient(90deg, lighten($bbplus-system-annotation-default-color,30%) 30%, lighten($bbplus-system-annotation-default-color,20%) 100%), center no-repeat scroll;
+			font-size: 0.9em;
+			font-weight: 600;
+			text-align: left;
+			float: left;
+			box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+			z-index: 10000;
+			color: $bbplus-white;
+			h3 {
+				font-weight: 300;
+				padding: 1rem 3rem 1rem 2rem;
+				margin: 0 0 1em 0;
+				color: darken($bbplus-system-annotation-default-color, 20%);
+				border-bottom: 1px solid lighten($bbplus-system-annotation-default-color, 10%);
+				//tooltip icon
+				&:after {
+					position: absolute;
+					right: 0.6em;
+					top: 0.2em;
+					//content: "\f129";
+					font-family: "FontAwesome";
+					display: block;
+					width: 1em;
+					height: 1em;
+					//border-radius: 1.5em;
+					//background-color: darken($bbplus-system-annotation-default-color,10%);
+					//box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25);
+					color: $bbplus-white;
+					font-size: 1.25em;
+					padding: 0.5em 0.25em 0em;
+					text-align: center;
+					display: inline-block;
+				}
+				&.bbp-annotation-organisation {
+					&:after {
+						content: "\f00a";
+					}
+				}
+				&.bbp-annotation-course-structure {
+					&:after {
+						content: "\f0e8";
+					}					
+				}
+				&.bbp-annotation-learning-content {
+					&:after {
+						content: "\f0f6";
+					}					
+				}
+				&.bbp-annotation-collaboration {
+					&:after {
+						content: "\f0e6";
+					}					
+				}
+				&.bbp-annotation-assessment {
+					&:after {
+						content: "\f087";
+					}					
+				}
+			}
+			h4 {
+				margin: 0;
+				padding: 0.5rem 2rem;
+			}
+			p {
+				font-weight: 300;
+				margin: 0;
+				padding: 0.5rem 2rem;
+			}
+			//tooltip arrow
+			&:after {
+				position: absolute;
+				left: -1.1em;
+				top: 0.8em;
+				content: "";
+				width: 0; 
+				height: 0; 
+				border-top: 1.2em solid transparent;
+				border-bottom: 1.2em solid transparent;	
+				border-right: 1.2em solid lighten($bbplus-system-annotation-default-color,30%);
+			}
+			&.bbp-annotation-structuring {
+				background: linear-gradient(90deg, $bbplus-system-annotation-structuring-color 30%, lighten($bbplus-system-annotation-structuring-color, 5%) 100%), center no-repeat scroll;
+				&:after {
+					border-right-color:  $bbplus-system-annotation-structuring-color;
+				}
+				h3 {
+					background-color: $bbplus-system-annotation-structuring-color;
+					border-bottom: 1px solid lighten($bbplus-system-annotation-structuring-color, 10%);
+					color: $bbplus-white;
+				}
+			}
+			&.bbp-annotation-engaging {
+				background: linear-gradient(90deg, $bbplus-system-annotation-engaging-color 30%, lighten($bbplus-system-annotation-engaging-color, 5%) 100%), center no-repeat scroll;
+				&:after {
+					border-right-color:  $bbplus-system-annotation-engaging-color;
+				}
+				h3 {
+					background-color: $bbplus-system-annotation-engaging-color;
+					border-bottom: 1px solid lighten($bbplus-system-annotation-engaging-color, 10%);
+					color: $bbplus-white;
+				}
+			}
+		}
+		&.bbp-tooltip {
+			position: absolute;
+			width: 20em;
+			right: -20em;
+			margin: 0;
+			padding: 2em;
+			border-top: 4px solid $bbplus-system-tooltip-default-color;
+			background: linear-gradient(90deg, lighten($bbplus-system-tooltip-default-color,30%) 30%, lighten($bbplus-system-tooltip-default-color,20%) 100%), center no-repeat scroll;
+			font-size: 0.9em;
+			font-weight: 600;
+			text-align: left;
+			float: left;
+			box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+			z-index: 10000;
+			color: $bbplus-system-tooltip-default-color;
+			h3 {
+				padding: 0.5em 0;
+				margin: 2em 0 1em;
+				color: darken($bbplus-system-tooltip-default-color, 20%);
+				border-bottom: 1px solid lighten($bbplus-system-tooltip-default-color, 10%);
+				//tooltip icon
+				&:after {
+					position: absolute;
+					left: 1em;
+					top: 0.5em;
+					content: "\f129";
+					font-family: "FontAwesome";
+					display: block;
+					width: 1em;
+					height: 1em;
+					border-radius: 1.5em;
+					background-color: darken($bbplus-system-tooltip-default-color,10%);
+					box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25);
+					color: $bbplus-system-tooltip-default-color;
+					font-size: 1.25em;
+					padding: 0.5em 0.25em 0em;
+					text-align: center;
+					display: inline-block;
+				}
+			}
+			p {
+				font-weight: 300;
+			}
+			//tooltip label
+			&:before {
+				position: absolute;
+				left: 4em;
+				top: 1.1em;
+				content: "Bb+ Help";
+				display: inline-block;
+				font-size: 1.25em;
+				color: $bbplus-system-tooltip-default-color;
+			}
+			//tooltip arrow
+			&:after {
+				position: absolute;
+				left: -1.1em;
+				top: 1em;
+				content: "";
+				width: 0; 
+				height: 0; 
+				border-top: 1.2em solid transparent;
+				border-bottom: 1.2em solid transparent;	
+				border-right: 1.2em solid lighten($bbplus-system-tooltip-default-color,30%);
+			}
+		}
+	}
+	
+}

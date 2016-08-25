@@ -1,0 +1,26 @@
+@mixin clearfix {
+	&:after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+}
+
+@mixin bbplus_depreciated {
+	&:before {
+		content: "Depreciated";
+		font-size: 3em;
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 0.3em;
+		color: #ec712d;
+		line-height: 1em;
+		padding-top: 3em;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		background: rgba(#ec712d,0.2) url($bbplus-image-path + "bbplus_diagonal-noise.png");
+	}
+}
