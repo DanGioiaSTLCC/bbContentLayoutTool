@@ -13,8 +13,6 @@ You will need the 'Javascript Hack' building block installed in Blackboard. Your
 
 <h3>Installing the Hack</h3>
 
-<<<<<<< HEAD
-=======
 To install the hack, simply add (upload) the three resource files into the hack and insert into the snippet area as below:
 ```
 <link rel="stylesheet" type="text/css" href="${resourcePath}/bbcltool.css">
@@ -47,5 +45,4 @@ Add as many variants for an artifact as you like, and you can create your own cu
 }
 ```
 
->>>>>>> de0a0a3bd6bbeed30218283ca16317ffb1d44c8c
 
