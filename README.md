@@ -30,6 +30,7 @@ The bbplus.css provides the presentation to the HTML artifacts, but this needs t
 <h3>Customising the HTML artifacts</h3>
 
 You can customise or create your own HTML artifacts. The bbPlus_Elements110216.js is a JS object of all the HTML artifacts (HTML structure and variant settings), and is accompanied by the bbplus.css (layout/presentation).
+<strong>Please note: the source files for bbplus.css are written in SASS and located in the /SASS/ folder.</strong> 
 
 You need to maintain the structure of the file however you can customise what appears within the 'LayoutHTML' and 'Variants' nodes. The 'LayoutHTML' node stores the HTML markup for the artifact, while the 'Variant' node contains the properties that change for each variant. 
 Add as many variants for an artifact as you like, and you can create your own custom variant properties. For example, with the Resource artifact below, the 'VariantName' property refers to the H4 title.
