@@ -35,14 +35,14 @@ You need to maintain the structure of the file however you can customise what ap
 Add as many variants for an artifact as you like, and you can create your own custom variant properties. For example, with the Resource artifact below, the 'VariantName' property refers to the H4 title.
 
 ``` javascript
-		"Resource":{
-			LayoutHTML:"<div class=\"bbplus bbpclt bbp-layout bbp-resource $_VariantClass_$\"><h4><span>$_VariantName_$ </span>Title for this Resource</h4><p>Enter your resource content here.</p></div>&nbsp;",
-			Variant:{
-				"Default": {VariantClass:"", VariantName:"Resources"},
-				"Lecture Notes": {VariantClass:"bbp-res-lnotes", VariantName:"Lecture Notes"},
-				"Files": {VariantClass:"bbp-res-files", VariantName:"Files"}
-			}
-		}
+"Resource":{
+	LayoutHTML:"<div class=\"bbplus bbpclt bbp-layout bbp-resource $_VariantClass_$\"><h4><span>$_VariantName_$ </span>Title for this Resource</h4><p>Enter your resource content here.</p></div>&nbsp;",
+	Variant:{
+		"Default": {VariantClass:"", VariantName:"Resources"},
+		"Lecture Notes": {VariantClass:"bbp-res-lnotes", VariantName:"Lecture Notes"},
+		"Files": {VariantClass:"bbp-res-files", VariantName:"Files"}
+	}
+}
 ```
 
 
