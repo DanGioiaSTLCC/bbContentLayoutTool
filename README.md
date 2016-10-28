@@ -9,7 +9,7 @@ You can check out a video of how the Content Layout Tool works here: https://med
 
 <h3>Dependencies</h3>
 
-You will need the 'Javascript Hack' building block installed in Blackboard. Your theme should also include the 'Font Awesome' fonts, declared with:  font family 'FontAwesome';
+If you want to use the tool in Blackboard, you will need the 'Javascript Hack' building block installed in Blackboard. Your theme should also include the 'Font Awesome' fonts, declared with:  font family 'FontAwesome';
 
 <h3>Installing the Hack</h3>
 
@@ -19,7 +19,7 @@ To install the hack, simply add (upload) the three resource files into the hack 
 <script type="text/javascript" src="${resourcePath}/bbContentLayoutTool.1.0.js"></script>
 <script type="text/javascript" src="${resourcePath}/bbPlus_Elements110216.js"></script>
 ```
-
+Note: The tool also requires Prototype.js (which may already be included in your Theme)
 The bbplus.css provides the presentation to the HTML artifacts, but this needs to be included inside your Theme.
 
 ```
